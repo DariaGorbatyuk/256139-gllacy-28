@@ -10,13 +10,40 @@
   <nav class="navigation">
     <a class="logo" href=""><img src="" alt=""></a>
     <ul class="menu-site">
-      <li class="menu-site__item">Каталог</li>
+      <li class="menu-site__item catalog">Каталог
+        <ul class="catalog-list">
+          <li class="catalog-item"><a href="#" class="catalog-list">Новинки</a></li>
+          <li class="catalog-item"><a href="#" class="catalog-list">Сливочное</a></li>
+          <li class="catalog-item"><a href="#" class="catalog-list">Щербеты</a></li>
+          <li class="catalog-item"><a href="#" class="catalog-list">Фруктовый лед</a></li>
+          <li class="catalog-item"><a href="#" class="catalog-list">Мелорин</a></li>
+        </ul>
+      </li>
       <li class="menu-site__item">Доставка и оплата</li>
       <li class="menu-site__item">О компании</li>
     </ul>
     <ul class="user-navigation">
-      <li class="user-navigation__item"><span class="visually-hidden">Поиск</span></li>
-      <li class="user-navigation__item">Вход</li>
+      <li class="user-navigation__item search"><span class="visually-hidden">Поиск</span>
+        <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
+          <label for="search-text" class="visually-hidden">Поиск</label>
+          <input id="search-text" type="text" name="search-text" placeholder="Крем-брюле">
+        </form>
+      </li>
+      <li class="user-navigation__item sign-up">Вход
+        <form class="sign-up-form" method="post" action="https://echo.htmlacademy.ru">
+          <div>
+            <label for="sign-up-email" class="visually-hidden">Логин</label>
+            <input id="sign-up-email" type="email" name="email" placeholder="email@example.com">
+          </div>
+          <div>
+            <label for="sign-up-password" class="visually-hidden">Пароль</label>
+            <input id="sign-up-password" type="password" name="password" placeholder="......">
+          </div>
+          <button type="submit">Войти</button>
+          <a href="#">Забыли пароль?</a>
+          <a href="#">Новая регистрация</a>
+        </form>
+      </li>
       <li class="user-navigation__item">Пусто</li>
     </ul>
   </nav>
