@@ -85,7 +85,41 @@
   <h1>Сливочное мороженое</h1>
   <section class="filter">
     <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
-<!--        form-->
+    <fieldset class="filter-sort">
+      <legend>Сортировка:</legend>
+<!--      select-->
+    </fieldset>
+      <fieldset class="filter-price">
+        <legend>Цена: </legend>
+        <p>Цена: 100 ₽ – 500 ₽</p>
+      </fieldset>
+      <fieldset class="filter-fat-content">
+        <legend>Жирность:</legend>
+      </fieldset>
+      <fieldset class="filter-additive">
+        <legend>Наполнители:</legend>
+        <div>
+          <input id="additive-chocolate" type="checkbox" name="chocolate" checked>
+          <label class="filter-additive__label" for="additive-chocolate">шоколадные</label>
+        </div>
+        <div>
+          <input id="additive-sugar-powders"  type="checkbox" name="sugar-powders" checked>
+          <label for="additive-sugar-powders">сахарные присыпки</label>
+        </div>
+        <div>
+          <input type="checkbox">
+          <label for="">фрукты</label>
+        </div>
+        <div>
+          <input type="checkbox">
+          <label for="">сиропы</label>
+        </div>
+        <div>
+          <input type="checkbox">
+          <label for="">джемы</label>
+        </div>
+      </fieldset>
+      <button type="submit">Применить</button>
     </form>
   </section>
   <section class="products">
