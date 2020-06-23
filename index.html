@@ -151,7 +151,8 @@
   </div>
   <section class="map">
     <article class="contacts">
-      <p>Адрес главного офиса и офлайн-магазина:</p>/*Вопрос*///////////////////////////////////////////////////
+      <p>Адрес главного офиса и офлайн-магазина:</p>
+<!--      /*Вопрос*///////////////////////////////////////////////////-->
       <p>ул. Большая Конюшенная, 19/8, Санкт-Петербург</p>
       <p>Для заказов по телефону:</p>
       <a href="tel: 8 812 450-25-25">8 812 450-25-25</a>
@@ -182,5 +183,23 @@
     <p>Сделано в&nbsp;HTML Academy &copy;&nbsp;2019</p>
   </section>
 </footer>
+<section class="modal-connection">
+  <h2>Мы обязательно вам ответим!</h2>
+  <form class="connection-form" method="post" action="https://echo.htmlacademy.ru">
+    <div>
+      <label for="connection-login" class="visually-hidden">Имя и Фамилия</label>
+      <input id="connection-login" type="text" name="login" placeholder="Имя Фамилия">
+    </div>
+    <div>
+      <label for="connection-email"  class="visually-hidden">Email</label>
+      <input id="connection-email" type="email" name="email" placeholder="email@example.com">
+    </div>
+    <div>
+      <label for="connection-message">Сообщение</label>
+      <textarea id="connection-message" name="message" cols="30" rows="10">В свободной форме</textarea>
+    </div>
+    <button type="submit">Отправить</button>
+  </form>
+</section>
 </body>
 </html>
