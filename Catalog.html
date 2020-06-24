@@ -46,30 +46,30 @@
         </form>
       </li>
       <li class="user-navigation__item basket active">2 товара
-      <section class="basket-section">
-        <ul class="goods-list">
-          <li class="goods-item">
-            <button class="basket__delete-item" type="button" aria-label="Удалить товар">
-              <svg></svg>
-            </button>
-            <img src="" alt="">
-            <p class="basket__description-item">Пломбир с апельсиновым джемом</p>
-            <p class="basket__weight">1,5 кг х <span>200 руб.</span></p>
-            <span class="basket__price">300 руб.</span>
-          </li>
-          <li class="goods-item">
-            <button class="basket__delete-item" type="button" aria-label="Удалить товар">
-              <svg></svg>
-            </button>
-            <img src="" alt="">
-            <p class="basket__description-item">Клубничный пломбир с присыпкой из белого шоколада</p>
-            <p class="basket__weight">1,5 кг х <span>300 руб.</span></p>
-            <span class="basket__price">450 руб.</span>
-          </li>
-        </ul>
-        <p class="basket__altogether-price">Итого: 750 руб.</p>
-        <a class="basket__order" href="#">Оформить заказ</a>
-      </section>
+        <section class="basket-section">
+          <ul class="goods-list">
+            <li class="goods-item">
+              <button class="basket__delete-item" type="button" aria-label="Удалить товар">
+                <svg></svg>
+              </button>
+              <img src="" alt="">
+              <p class="basket__description-item">Пломбир с апельсиновым джемом</p>
+              <p class="basket__weight">1,5 кг х <span>200 руб.</span></p>
+              <span class="basket__price">300 руб.</span>
+            </li>
+            <li class="goods-item">
+              <button class="basket__delete-item" type="button" aria-label="Удалить товар">
+                <svg></svg>
+              </button>
+              <img src="" alt="">
+              <p class="basket__description-item">Клубничный пломбир с присыпкой из белого шоколада</p>
+              <p class="basket__weight">1,5 кг х <span>300 руб.</span></p>
+              <span class="basket__price">450 руб.</span>
+            </li>
+          </ul>
+          <p class="basket__altogether-price">Итого: 750 руб.</p>
+          <a class="basket__order" href="#">Оформить заказ</a>
+        </section>
       </li>
     </ul>
   </nav>
@@ -85,16 +85,46 @@
   <h1>Сливочное мороженое</h1>
   <section class="filter">
     <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
-    <fieldset class="filter-sort">
-      <legend>Сортировка:</legend>
-<!--      select-->
-    </fieldset>
+      <fieldset class="filter-sort">
+        <legend>Сортировка:</legend>
+        <!--      select-->
+      </fieldset>
       <fieldset class="filter-price">
-        <legend>Цена: </legend>
-        <p>Цена: 100 ₽ – 500 ₽</p>
+        <legend>Цена:</legend>
+        <label>
+          <span class="visually-hidden">От</span>
+          <input type="number" value="100" name="min-price">
+        </label>
+        <label>
+          <span class="visually-hidden">До</span>
+          <input type="number" value="500" name="max-price">
+        </label>
+        <div class="range-controls">
+          <div class="scale">
+            <div class="bar"></div>
+          </div>
+          <button class="toggle toggle-min" type="button"><span class="visually-hidden">Меньше</span></button>
+          <button class="toggle toggle-max" type="button"><span class="visually-hidden">Больше</span></button>
+        </div>
       </fieldset>
       <fieldset class="filter-fat-content">
         <legend>Жирность:</legend>
+        <div>
+          <input id="fat-content-0" type="radio" name="fat-content" value="0">
+          <label for="fat-content-0">0%</label>
+        </div>
+        <div>
+          <input id="fat-content-less10" type="radio" name="fat-content" value="<10%" checked>
+          <label for="fat-content-less10">до 10%</label>
+        </div>
+        <div>
+          <input id="fat-content-less30" type="radio" name="fat-content" value="<30%">
+          <label for="fat-content-less30">до 30%</label>
+        </div>
+        <div>
+          <input id="fat-content-above30" type="radio" name="fat-content" value=">30%">
+          <label for="fat-content-above30">выше 30%</label>
+        </div>
       </fieldset>
       <fieldset class="filter-additive">
         <legend>Наполнители:</legend>
@@ -103,20 +133,20 @@
           <label class="filter-additive__label" for="additive-chocolate">шоколадные</label>
         </div>
         <div>
-          <input id="additive-sugar-powders"  type="checkbox" name="sugar-powders" checked>
-          <label for="additive-sugar-powders">сахарные присыпки</label>
+          <input id="additive-sugar-powders" type="checkbox" name="sugar-powders" checked>
+          <label class="filter-additive__label" for="additive-sugar-powders">сахарные присыпки</label>
         </div>
         <div>
-          <input type="checkbox">
-          <label for="">фрукты</label>
+          <input id="additive-fruits" type="checkbox" name="fruits">
+          <label class="filter-additive__label" for="additive-fruits">фрукты</label>
         </div>
         <div>
-          <input type="checkbox">
-          <label for="">сиропы</label>
+          <input id="additive-syrups" type="checkbox" name="syrups">
+          <label class="filter-additive__label" for="additive-syrups">сиропы</label>
         </div>
         <div>
-          <input type="checkbox">
-          <label for="">джемы</label>
+          <input id="additive-marmalade" type="checkbox" name="marmalade">
+          <label class="filter-additive__label" for="additive-marmalade">джемы</label>
         </div>
       </fieldset>
       <button type="submit">Применить</button>
@@ -149,7 +179,7 @@
       <li class="product-item">
         <article class="product-section"><img src="" alt="">
           <p>415 ₽<span>/кг</span></p>
-          <h3>Сливочное крем-брюле  с карамельной подливкой </h3>
+          <h3>Сливочное крем-брюле с карамельной подливкой </h3>
           <a href="#">Быстрый просмотр</a>
         </article>
       </li>
