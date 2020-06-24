@@ -87,7 +87,14 @@
     <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
       <fieldset class="filter-sort">
         <legend>Сортировка:</legend>
-        <!--      select-->
+        <label><span class="visually-hidden">Виды сортировки</span>
+          <select name="sort">
+            <option value="by-popularity">по популярности</option>
+            <option value="cheap-at-first">сначала недорогие</option>
+            <option value="expensive-at-first">сначала дорогие</option>
+            <option value="by-fat-content">по жирности</option>
+          </select>
+        </label>
       </fieldset>
       <fieldset class="filter-price">
         <legend>Цена:</legend>

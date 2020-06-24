@@ -87,7 +87,8 @@
       <li class="product-item">
         <article class="product-section">
           <img src="" alt="">
-          <p>310 ₽<span>/кг</span></p>
+          <p>310 <span>&#8381;</span><span>/кг</span></p>
+<!--          	& #8381; не рабоает-->
           <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
         </article>
       </li>
@@ -152,13 +153,12 @@
   </div>
   <section class="map">
     <article class="contacts">
-      <p>Адрес главного офиса и офлайн-магазина:</p>
-<!--      /*Вопрос*///////////////////////////////////////////////////-->
-      <p>ул. Большая Конюшенная, 19/8, Санкт-Петербург</p>
-      <p>Для заказов по телефону:</p>
-      <a href="tel: 8 812 450-25-25">8 812 450-25-25</a>
-      <p>(с 10 до 20 ежедневно)</p>
-      <a href="#">Форма обратной связи</a>
+      <p class="contacts__address-text">Адрес главного офиса и офлайн-магазина:</p>
+      <p class="contacts__address">ул. Большая Конюшенная, 19/8, Санкт-Петербург</p>
+      <p class="contacts__tel-text">Для заказов по телефону:</p>
+      <a class="contacts__tel" href="tel: 8 812 450-25-25">8 812 450-25-25</a>
+      <p class="contacts__time">(с 10 до 20 ежедневно)</p>
+      <a class="contacts-modal-form" href="#">Форма обратной связи</a>
     </article>
   </section>
 </main>
