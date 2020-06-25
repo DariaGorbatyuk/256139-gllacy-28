@@ -25,7 +25,8 @@
       <li class="menu-site__item">О компании</li>
     </ul>
     <ul class="user-navigation">
-      <li class="user-navigation__item search"><span class="visually-hidden">Поиск</span>
+      <li class="user-navigation__item search">
+        <span class="visually-hidden">Поиск</span>
         <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
           <label for="search-text" class="visually-hidden">Поиск</label>
           <input id="search-text" type="text" name="search-text" placeholder="Крем-брюле">
@@ -55,12 +56,22 @@
 <main>
   <h1>Магазин мороженного Gllacy</h1>
   <section class="slider">
-    <h2>Крем-брюле и пломбир с малиновым джемом</h2>
-    <img src="./img/raspberry-jam-3.png" alt="Крем-брюле и пломбир с малиновым джемом" width="647" height="584">
+    <ul class="slider-list">
+      <li class="slider-item">
+        <h2>Крем-брюле и пломбир с малиновым джемом</h2>
+        <img src="./img/raspberry-jam-3.png" alt="Крем-брюле и пломбир с малиновым джемом" width="647" height="584">
+      </li>
+      <li class="slider-item">
+        <h2>Шоколадный пломбир и лимонный сорбет</h2>
+        <img src="./img/chocolate-and-lemon-2.png" alt="Шоколадный пломбир и лимонный сорбет" width="644" height="582"></li>
+      <li class="slider-item">
+        <h2>Пломбир с помадкой и клубничный щербет</h2>
+        <img src="./img/strawberry-sorbet-1.png" alt="Пломбир с помадкой и клубничный щербет" width="639" height="582"></li>
+    </ul>
     <a href="#">Давайте оба!</a>
-    <button type="button"></button>
-    <button type="button"></button>
-    <button type="button"></button>
+    <button class="slider-btn active" type="button"></button>
+    <button class="slider-btn" type="button"></button>
+    <button class="slider-btn" type="button"></button>
   </section>
   <section class="promo">
     <h2 class="visually-hidden">Промо акции</h2>
@@ -82,33 +93,33 @@
       </li>
     </ul>
   </section>
-  <section class="top-product">
+  <section class="bestsellers">
     <h2>Самые популярные товары</h2>
-    <ul class="product-list">
-      <li class="product-item">
-        <article class="product-section">
+    <ul class="bestsellers-list">
+      <li class="bestsellers-item">
+        <article class="bestsellers-section">
           <img src="./img/hit-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
           <p>310 <span>&#8381;</span><span>/кг</span></p>
-          <!--          	& #8381; не рабоает как пис-->
+          <!--          	& #8381; не рабоает -->
           <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
         </article>
       </li>
-      <li class="product-item">
-        <article class="product-section">
+      <li class="bestsellers-item">
+        <article class="bestsellers-section">
           <img src="./img/hit-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
           <p>380 ₽<span>/кг</span></p>
           <h3>Сливочно-кофейное с кусочками шоколада</h3>
         </article>
       </li>
-      <li class="product-item">
-        <article class="product-section">
+      <li class="bestsellers-item">
+        <article class="bestsellers-section">
           <img src="./img/hit-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
           <p>355 ₽<span>/кг</span></p>
           <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
         </article>
       </li>
-      <li class="product-item">
-        <article class="product-section">
+      <li class="bestsellers-item">
+        <article class="bestsellers-section">
           <img src="./img/hit-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
           <p>415 ₽<span>/кг</span></p>
           <h3>Сливочное крем-брюле с карамельной подливкой </h3>
