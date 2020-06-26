@@ -32,7 +32,12 @@
   --green-bg: #9EB8A9;
   --blue-bg: #B7C2CF;
   --violet-bg: #B2A19A;
+  --waffle: #EEE4CB;
+  --milk-white-bg: #F8F7F4;
+
   --text-shadow: 160, 32, 11;
+  --text-about-us:  #323232;
+  --subscription-text: #5A5A5A;
 }
 
 *, *::before, *::after {
@@ -65,6 +70,8 @@ img {
   font-size: 18px;
   line-height: 24px;
   text-shadow: 0px 2px 5px rgba(var(--text-shadow), 0.76);
+  border: 0;
+  padding: 0;
 }
 .visually-hidden {
   position: absolute;
@@ -169,3 +176,88 @@ img {
   font-size: 18px;
   line-height: 22px;
 }
+/*bestsellers*/
+.bestsellers-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.ice-heading{
+  margin: 0;
+  font-weight: 500;
+  font-size: inherit;
+}
+.ice-price{
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 45px;
+}
+.ice-price >span{
+  font-size: 30px;
+  line-height: 35px;
+}
+.ice-link{
+  display: none;
+}
+
+/*about us*/
+.about-us{
+  color: var(--text-about-us);
+  background-color: var(--waffle);
+  background-image: url("../img/waffle-pattern.jpg");
+  background-repeat: repeat;
+}
+.info-heading{
+  margin: 0;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+}
+.info-list{
+  padding: 0;
+  list-style: none;
+}
+.info-text{
+  margin: 0;
+}
+/*columns*/
+.blog-news{
+  width: 560px;
+  color: var(--text-about-us);
+  background-color: var(--basic-white);
+  background-image: url("../img/strawberry-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.blog-news .excerpt{
+  margin: 0;
+  font-weight: 500;
+}
+.blog-news__heading{
+  margin: 0;
+}
+.blog-news__link{
+  color: var(--text-about-us);
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  border-bottom: 2px solid var(--text-about-us);
+}
+.subscription{
+  width: 560px;
+  background-image: url("../img/post-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  color: var(--subscription-text);
+}
+.subscription-layout{
+  width: 548px;
+  margin: 0 auto;
+  background-color: var(--milk-white-bg);
+  border-radius: 16px;
+}
+.subscription__text{
+  margin: 0;
+}
+/*map*/
