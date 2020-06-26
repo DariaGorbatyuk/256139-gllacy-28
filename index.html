@@ -7,13 +7,14 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="site-page">
-  <header>
+<div class="wrapper">
+  <header class="header container">
     <nav class="navigation">
       <a class="logo">
         <img src="./img/logo.svg" alt="Логотип магазина" width="154" height="64">
       </a>
       <ul class="menu-site">
-        <li class="menu-site__item catalog"><a href="#">Каталог</a>
+        <li class="menu-site__item catalog"><a class="menu-site__link" href="#">Каталог</a>
           <ul class="catalog-list">
             <li class="catalog-item"><a href="#" class="catalog-list">Новинки</a></li>
             <li class="catalog-item"><a href="catalog.html" class="catalog-list">Сливочное</a></li>
@@ -22,8 +23,8 @@
             <li class="catalog-item"><a href="#" class="catalog-list">Мелорин</a></li>
           </ul>
         </li>
-        <li class="menu-site__item"><a href="#">Доставка и оплата</a></li>
-        <li class="menu-site__item"><a href="#">О компании</a></li>
+        <li class="menu-site__item"><a class="menu-site__link" href="#">Доставка и оплата</a></li>
+        <li class="menu-site__item"><a class="menu-site__link" href="#">О компании</a></li>
       </ul>
       <ul class="user-navigation">
         <li class="user-navigation__item search">
@@ -53,29 +54,29 @@
         <li class="user-navigation__item basket">Пусто</li>
       </ul>
     </nav>
-    <p>с 10 до 20, ежедневно</p>
-    <a href="tel: 8 812 450-25-25">8 812 450-25-25</a>
+    <p class="navigation__work-time">с 10 до 20, ежедневно</p>
+    <a class="navigation__tel" href="tel: 8 812 450-25-25">8 812 450-25-25</a>
   </header>
   <main>
-    <h1>Магазин мороженного Gllacy</h1>
-    <section class="slider">
+    <h1 class="visually-hidden">Магазин мороженного Gllacy</h1>
+    <section class="slider container">
       <ul class="slider-list">
-        <li class="slider-item">
-          <h2>Крем-брюле и пломбир с малиновым джемом</h2>
-          <img src="./img/raspberry-jam-3.png" alt="Крем-брюле и пломбир с малиновым джемом" width="647" height="584">
-          <a href="#">Давайте оба!</a>
+        <li class="slider-item active">
+          <h2 class="slider__heading">Крем-брюле и пломбир с малиновым джемом</h2>
+          <img class="slider__img" src="./img/raspberry-jam-3.png" alt="Крем-брюле и пломбир с малиновым джемом" width="647" height="584">
+          <a class="slider__link" href="#">Давайте оба!</a>
         </li>
         <li class="slider-item">
-          <h2>Шоколадный пломбир и лимонный сорбет</h2>
-          <img src="./img/chocolate-and-lemon-2.png" alt="Шоколадный пломбир и лимонный сорбет" width="644"
+          <h2 class="slider__heading">Шоколадный пломбир и лимонный сорбет</h2>
+          <img class="slider__img" src="./img/chocolate-and-lemon-2.png" alt="Шоколадный пломбир и лимонный сорбет" width="644"
                height="582">
-          <a href="#">Давайте оба!</a>
+          <a class="slider__link" href="#">Давайте оба!</a>
         </li>
         <li class="slider-item">
-          <h2>Пломбир с помадкой и клубничный щербет</h2>
-          <img src="./img/strawberry-sorbet-1.png" alt="Пломбир с помадкой и клубничный щербет" width="639"
+          <h2 class="slider__heading">Пломбир с помадкой и клубничный щербет</h2>
+          <img class="slider__img" src="./img/strawberry-sorbet-1.png" alt="Пломбир с помадкой и клубничный щербет" width="639"
                height="582">
-          <a href="#">Давайте оба!</a>
+          <a class="slider__link" href="#">Давайте оба!</a>
         </li>
       </ul>
       <button class="slider-btn active" type="button" aria-label="Первый слайд"></button>
@@ -87,18 +88,18 @@
       <ul class="promo-list">
         <li class="promo-item">
           <article class="promo-section">
-            <h3>Малинка даром!</h3>
-            <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья
+            <h3 class="promo__heading">Малинка даром!</h3>
+            <p class="promo__text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья
               бесплатно.</p>
-            <a href="#">Хочу варенье!</a>
+            <a class="promo__link btn-link" href="#">Хочу варенье!</a>
           </article>
         </li>
         <li class="promo-item">
           <article class="promo-section">
-            <h3>Шоколадки даром!</h3>
-            <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно
+            <h3 class="promo__heading">Шоколадки даром!</h3>
+            <p class="promo__text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно
               бесплатно.</p>
-            <a href="#">Хочу шоколадки!</a>
+            <a class="promo__link btn-link" href="#">Хочу шоколадки!</a>
           </article>
         </li>
       </ul>
@@ -241,6 +242,7 @@
       <p>Сделано в&nbsp;HTML Academy &copy;&nbsp;2019</p>
     </section>
   </footer>
+</div>
 <section class="modal-connection">
   <h2>Мы обязательно вам ответим!</h2>
   <form class="connection-form" method="post" action="https://echo.htmlacademy.ru">

@@ -27,28 +27,145 @@
 
 
 :root {
-
+  --basic-white: #FFFFFF;
+  --white-opacity: 255, 255, 255;
+  --green-bg: #9EB8A9;
+  --blue-bg: #B7C2CF;
+  --violet-bg: #B2A19A;
+  --text-shadow: 160, 32, 11;
 }
 
-*,
-*:before,
-*:after {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
 body {
   min-width: 1200px;
-  padding-right: 20px;
-  padding-left: 20px;
+  margin: 0;
+  padding: 0;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: var(--basic-white);
+  background-color: var(--green-bg);
 }
 
 a {
   text-decoration: none;
+  color: var(--basic-white);
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+.btn-link{
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  text-shadow: 0px 2px 5px rgba(var(--text-shadow), 0.76);
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 1200px;
+  background-color: inherit;
+}
+
+.container {
+  padding: 0 7px;
+  position: relative;
+}
+/*header*/
+.menu-site{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.menu-site__link{
+  font-weight: bold;
+  line-height: 18px;
+  border-bottom: 1px solid rgba(var(--white-opacity), 0.2);
+}
+.catalog-list{
+  display: none;
+  list-style: none;
+  padding: 0;
+}
+/*user-navigation*/
+.user-navigation{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+/*search-form*/
+.search-form{
+  display: none;
+}
+/*sign-up-form*/
+.sign-up-form{
+  display: none;
+}
+.navigation__work-time,
+.navigation__tel{
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 24px;
+  margin: 0;
+}
+/*main*/
+/*slider*/
+.slider-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.slider-item:not(.active){
+  display: none;
+}
+.slider__heading{
+  margin: 0;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+.slider__link{
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+}
+/*promo*/
+.promo-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.promo__heading{
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 41px;
+  margin: 0;
+}
+.promo__text{
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
 }
