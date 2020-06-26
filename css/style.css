@@ -260,4 +260,14 @@ img {
 .subscription__text{
   margin: 0;
 }
-/*map*/
+/*fooer*/
+
+.map__img{
+  width: 100%;
+  object-fit: cover;
+  height: 430px;
+}
+.footer{
+  width: 1200px;
+  margin: 0 auto;
+}
