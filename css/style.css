@@ -29,6 +29,7 @@
 :root {
   --basic-white: #FFFFFF;
   --white-opacity: 255, 255, 255;
+  --white-contacts: #FEFEFE;
   --green-bg: #9EB8A9;
   --blue-bg: #B7C2CF;
   --violet-bg: #B2A19A;
@@ -261,13 +262,41 @@ img {
   margin: 0;
 }
 /*fooer*/
-
+/*index-footer*/
+.map{
+  position: relative;
+}
 .map__img{
   width: 100%;
   object-fit: cover;
   height: 430px;
 }
+.map >.contacts{
+  position: absolute;
+  top: 0;
+  background-color: var(--white-contacts);
+  color: var(--text-about-us);
+}
 .footer{
   width: 1200px;
   margin: 0 auto;
+}
+.socials-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.useful-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.developer >p{
+  margin: 0;
+}
+
+/*modal*/
+.modal-connection{
+  display: none;
 }
