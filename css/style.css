@@ -237,18 +237,28 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-
+.bestsellers-section{
+  width: 267px;
+}
+.ice-img{
+  border-radius: 50%;
+}
 .ice-heading {
   margin: 0;
   font-weight: 500;
   font-size: inherit;
+  text-align: center;
 }
 
 .ice-price {
   font-weight: bold;
   font-size: 45px;
   line-height: 45px;
+  margin: 0;
 }
 
 .ice-price > span {
@@ -266,6 +276,8 @@ img {
   background-color: var(--waffle);
   background-image: url("../img/waffle-pattern.jpg");
   background-repeat: repeat;
+  border-radius: 16px;
+  width: 1146px;
 }
 
 .info-heading {
