@@ -278,6 +278,7 @@ img {
   background-repeat: repeat;
   border-radius: 16px;
   width: 1146px;
+  padding: 0;
 }
 
 .info-heading {
@@ -291,15 +292,29 @@ img {
   padding: 0;
   margin: 0;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.info-item{
+  flex-basis: 560px;
 }
 
 .info-text {
   margin: 0;
+  width: 485px;
+  margin-left: auto;
 }
 
 /*columns*/
+.columns{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .blog-news {
   width: 560px;
+  border-radius: 16px;
   color: var(--text-about-us);
   background-color: var(--basic-white);
   background-image: url("../img/strawberry-background.png");
@@ -356,13 +371,27 @@ img {
   height: 430px;
 }
 
-.map > .contacts {
+.index-footer .contacts {
+  width: 303px;
   position: absolute;
   top: 0;
   background-color: var(--white-contacts);
   color: var(--text-about-us);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 16px;
 }
-
+.contacts > p{
+  margin: 0;
+}
+.contacts__address{
+  font-weight: bold;
+}
+.contacts__tel{
+  color: var(--text-about-us);
+  font-weight: bold;
+}
 .footer {
   width: 1200px;
   margin: 0 auto;
