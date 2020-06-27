@@ -395,20 +395,38 @@ img {
 .footer {
   width: 1200px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 293px 560px 293px;
+  grid-auto-rows: min-content;
+  align-items: center;
 }
-
+.socials{
+  justify-self: start;
+}
 .socials-list {
   margin: 0;
   padding: 0;
   list-style: none;
-}
 
+}
+.socials-item::before{
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  width: 36px;
+  height: 36px;
+}
+.socials-item.fb::before{
+  background-image: url("../img/fb.svg");
+}
 .useful-list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-
+.developer{
+  justify-self: end;
+}
 .developer > p {
   margin: 0;
 }
