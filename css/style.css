@@ -123,6 +123,7 @@ img {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 19px;
 }
 
 .menu-site__link {
@@ -148,19 +149,35 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin-left: auto;
-}
+  margin-top: 14px;
 
+}
+.user-navigation__item{
+  margin-right: 10px;
+}
+.user-navigation__item:last-child{
+  margin-right: 0;
+}
 .user-navigation__link{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   background-color: rgba(var(--white-opacity), 0.2);
   border-radius: 20px;
+  padding: 6px 16px 7px;
+}
+.user-navigation__link span{
+  padding-left: 8px;
 }
 .user-navigation__link.search {
   border-radius: 50%;
   width: 32px;
   height: 32px;
+  padding: 0;
+}
+.user-navigation__link.search svg{
+  display: flex;
+  margin: auto;
 }
 .user-navigation__link:hover,
 .user-navigation__link:focus,
