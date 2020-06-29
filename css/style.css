@@ -399,6 +399,7 @@ img {
   grid-template-columns: 293px 560px 293px;
   grid-auto-rows: min-content;
   align-items: center;
+  justify-items: center;
 }
 .socials{
   justify-self: start;
@@ -437,9 +438,24 @@ img {
 }
 
 .useful-list {
+  width: 327px;
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.useful-item{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.useful-item.heart::before{
+  content: "";
+  display: block;
+  width: 15px;
+  height: 13px;
+  background-image: url("../img/heart.svg");
 }
 .developer{
   justify-self: end;
