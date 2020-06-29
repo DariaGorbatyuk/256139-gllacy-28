@@ -30,6 +30,9 @@
   --basic-white: #FFFFFF;
   --white-opacity: 255, 255, 255;
   --white-contacts: #FEFEFE;
+  --menu-active: #EDEDED;
+  --menu-shadow-active: #696969;
+
   --green-bg: #9EB8A9;
   --blue-bg: #B7C2CF;
   --violet-bg: #B2A19A;
@@ -116,22 +119,47 @@ img {
   display: flex;
   flex-wrap: wrap;
 }
-
+.navigation .logo{
+  margin-right: 11px;
+}
 .menu-site {
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 19px;
+  margin-top: 18px;
 }
-
+.menu-site__item{
+  height: min-content;
+  margin-right: 7px;
+}
 .menu-site__link {
+  border-radius: 26px;
+  padding: 9px 13px 11px;
+}
+.menu-site__link span{
+  border-bottom: 1px solid rgba(var(--white-opacity), 0.2);
   font-weight: bold;
   line-height: 18px;
-  border-bottom: 1px solid rgba(var(--white-opacity), 0.2);
 }
-
+.menu-site__link:hover,
+.menu-site__link:focus{
+  background-color: var(--basic-white);
+}
+.menu-site__link:hover span,
+.menu-site__link:focus span{
+  color: var(--text-about-us);
+  border-bottom: transparent;
+}
+.menu-site__link:active{
+  background-color: var(--menu-active);
+  box-shadow: inset 0px 2px 1px var(--menu-shadow-active);
+}
+.menu-site__link:active span{
+  color: var(--text-about-us);
+  border-bottom: transparent;
+}
 .catalog-list {
   display: none;
   list-style: none;
@@ -190,9 +218,7 @@ img {
 .user-navigation__link:active svg{
   fill: var(--text-about-us);
 }
-.user-navigation__link.sign-up{
 
-}
 
 
   /*search-form*/
@@ -213,6 +239,11 @@ img {
   margin: 0;
   text-align: right;
   display: block;
+}
+.navigation__work-time{
+  font-size: 14px;
+  margin-bottom: 11px;
+  line-height: 9px;
 }
 
 /*main*/
