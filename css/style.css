@@ -407,18 +407,35 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
-
+  display: flex;
+  flex-wrap: wrap;
 }
-.socials-item::before{
+.socials-link::before{
   content: "";
   display: block;
   background-repeat: no-repeat;
   width: 36px;
   height: 36px;
+  opacity: 0.8;
 }
-.socials-item.fb::before{
-  background-image: url("../img/fb.svg");
+.socials-link.fb::before{
+  background-image: url("../img/fb-active.svg");
 }
+.socials-link.vk::before{
+  background-image: url("../img/vk-active.svg");
+}
+.socials-link.inst::before{
+  background-image: url("../img/inst-active.svg");
+}
+.socials-link.tw::before{
+  background-image: url("../img/tw-active.svg");
+}
+.socials-link:hover::before,
+.socials-link:focus::before,
+.socials-link:active::before{
+  opacity: 1;
+}
+
 .useful-list {
   margin: 0;
   padding: 0;
