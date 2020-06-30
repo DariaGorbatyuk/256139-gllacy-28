@@ -38,12 +38,22 @@
   --violet-bg: #B2A19A;
   --waffle: #EEE4CB;
   --milk-white-bg: #F8F7F4;
+
   --raspberry-bg: #921335;
   --chocolate-bg: #5E3A2C;
+
+  --btn-liner-grad1: #F26843;
+  --btn-liner-grad2: #E74A35;
+  --btn-hover-bs: #AC1000;/*box-shadow*/
+  --btn-bs: rgba(172, 16, 0, 0.64);
+  --btn-active-bs: #942718;
+
 
   --text-shadow: 160, 32, 11;
   --text-about-us: #323232;
   --subscription-text: #5A5A5A;
+
+  --black-opacity: 0, 0, 0;
 }
 
 *, *::before, *::after {
@@ -86,8 +96,21 @@ img {
   font-size: 18px;
   line-height: 24px;
   text-shadow: 0px 2px 5px rgba(var(--text-shadow), 0.76);
+  box-shadow: 0px 2px 2px var(--btn-bs);
   border: 0;
   padding: 0;
+  display: block;
+  background: linear-gradient(180deg, var(--btn-liner-grad1) 0%, var(--btn-liner-grad2) 100%);
+  border-radius: 70px;
+}
+.btn-link:hover,
+.btn-link:focus{
+  background: linear-gradient(0deg, rgba(var(--white-opacity), 0.2), rgba(var(--white-opacity), 0.2)), linear-gradient(180deg, var(--btn-liner-grad1) 0%, var(--btn-liner-grad2) 100%);
+  box-shadow: 0px 2px 2px var(--btn-hover-bs);
+}
+.btn-link:active{
+  background: linear-gradient(0deg, rgba(var(--black-opacity), 0.07), rgba(var(--black-opacity), 0.07)), linear-gradient(180deg, var(--btn-liner-grad1) 0%, var(--btn-liner-grad2) 100%);
+  box-shadow: inset 0px 2px 2px var(--btn-active-bs);
 }
 
 .visually-hidden {
@@ -248,6 +271,10 @@ img {
 
 /*main*/
 /*slider*/
+.slider{
+  padding-top: 273px;
+  margin-bottom: 16px;
+}
 .slider-list {
   margin: 0;
   padding: 0;
@@ -259,19 +286,57 @@ img {
 }
 
 .slider__heading {
-  margin: 0;
+  margin: 0 auto;
   font-weight: bold;
   font-size: 60px;
   line-height: 60px;
   text-align: center;
+  width: 672px;
+  margin-bottom: 29px;
 }
-
+.slider__img{
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  top: -40px;
+}
 .slider__link {
   font-weight: bold;
   font-size: 32px;
   line-height: 44px;
+  width: 278px;
+  margin: 0 auto;
+  padding: 8px 40px 12px;
 }
-
+.slider-btn-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  bottom: 22px;
+}
+.slider-btn-item{
+  margin-right: 7px;
+}
+.slider-btn{
+  width: 21px;
+  height: 21px;
+  background-color: transparent;
+  border: 2px solid var(--basic-white);
+  border-radius: 50%;
+}
+.slider-btn:hover,
+.slider-btn:focus{
+  background-color: rgba(var(--white-opacity), 0.4);
+}
+.slider-btn:active,
+.slider-btn.active{
+  background-color: var(--basic-white);
+}
 /*promo*/
 .promo-list {
   margin: 0;
