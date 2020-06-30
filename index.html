@@ -162,7 +162,7 @@
         </article>
       </li>
       <li class="bestsellers-item">
-        <article class="bestsellers-section"  tabindex="0">
+        <article class="bestsellers-section" tabindex="0">
           <img class="ice-img" src="./img/hit-2.jpg" width="267" height="267"
                alt="Сливочно-кофейное с кусочками шоколада">
           <p class="ice-price">380<span>/кг</span></p>
@@ -173,7 +173,7 @@
         </article>
       </li>
       <li class="bestsellers-item">
-        <article class="bestsellers-section"  tabindex="0">
+        <article class="bestsellers-section" tabindex="0">
           <img class="ice-img" src="./img/hit-3.jpg" width="267" height="267"
                alt="Сливочно-клубничное с присыпкой из белого шоколада">
           <p class="ice-price">355<span>/кг</span></p>
@@ -184,7 +184,7 @@
         </article>
       </li>
       <li class="bestsellers-item">
-        <article class="bestsellers-section"  tabindex="0">
+        <article class="bestsellers-section" tabindex="0">
           <img class="ice-img" src="./img/hit-4.jpg" width="267" height="267"
                alt="Сливочное крем-брюле с карамельной подливкой">
           <p class="ice-price">415<span>/кг</span></p>
@@ -222,8 +222,8 @@
   <div class="columns container">
     <article class="blog-news">
       <p class="excerpt ">Новое в нашем блоге</p>
-      <h2 class="blog-news__heading"><a class="blog-news__link" href="#">10 способов сервировки фруктовых щербетов к
-        столу</a></h2>
+      <h2 class="blog-news__heading"><a class="blog-news__link" href="#">10&nbsp;способов сервировки фруктовых щербетов
+        к&nbsp;столу</a></h2>
     </article>
     <article class="subscription">
       <div class="subscription-layout">
@@ -232,7 +232,7 @@
           Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <form class="sub-form" method="post" action="https://echo.htmlacademy.ru">
           <label class="visually-hidden" for="sub-email">E-mail</label>
-          <input id="sub-email" type="email" name="email" placeholder="email@example.com">
+          <input id="sub-email" class="sub-email" type="email" name="email" placeholder="email@example.com" required>
           <button class="sub-btn btn-link" type="submit">Отправить</button>
         </form>
       </div>
@@ -244,15 +244,17 @@
     <h2 class="visually-hidden">Наши контакты</h2>
     <img class="map__img" src="./img/map.png" alt="ул. Большая Конюшенная, 19/8, Санкт-Петербург" width="1200"
          height="430">
-    <article class="contacts">
-      <h3 class="visually-hidden">Адреса и телефоны</h3>
-      <p class="contacts__address-text">Адрес главного офиса и офлайн-магазина:</p>
-      <p class="contacts__address">ул. Большая Конюшенная, 19/8, Санкт-Петербург</p>
-      <p class="contacts__tel-text">Для заказов по телефону:</p>
-      <a class="contacts__tel" href="tel:88124502525">8 812 450-25-25</a>
-      <p class="contacts__time">(с 10 до 20 ежедневно)</p>
-      <a class="contacts-modal-form btn-link" href="#">Форма обратной связи</a>
-    </article>
+    <div class="contacts-layout">
+      <article class="contacts">
+        <h3 class="visually-hidden">Адреса и телефоны</h3>
+        <p class="contacts__address-text">Адрес главного офиса и офлайн-магазина:</p>
+        <p class="contacts__address">ул. Большая Конюшенная, 19/8, Санкт-Петербург</p>
+        <p class="contacts__tel-text">Для заказов по телефону:</p>
+        <a class="contacts__tel" href="tel:88124502525">8 812 450-25-25</a>
+        <p class="contacts__time">(с 10 до 20 ежедневно)</p>
+        <a class="contacts-modal-form-link btn-link" href="#">Форма обратной связи</a>
+      </article>
+    </div>
   </section>
   <div class="footer container">
     <section class="socials">

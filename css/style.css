@@ -47,12 +47,13 @@
   --btn-hover-bs: #AC1000; /*box-shadow*/
   --btn-bs: rgba(172, 16, 0, 0.64);
   --btn-active-bs: #942718;
-
+  --blue-post: lightblue;
 
   --text-shadow: 160, 32, 11;
+  --input-email: 178, 178, 178;
   --text-about-us: #323232;
   --subscription-text: #5A5A5A;
-
+ --placegolder-sub: #999999;
   --black-opacity: 0, 0, 0;
 }
 
@@ -102,12 +103,14 @@ img {
   display: block;
   background: linear-gradient(180deg, var(--btn-liner-grad1) 0%, var(--btn-liner-grad2) 100%);
   border-radius: 70px;
+  color: var(--basic-white);
 }
 
 .btn-link:hover,
 .btn-link:focus {
   background: linear-gradient(0deg, rgba(var(--white-opacity), 0.2), rgba(var(--white-opacity), 0.2)), linear-gradient(180deg, var(--btn-liner-grad1) 0%, var(--btn-liner-grad2) 100%);
   box-shadow: 0px 2px 2px var(--btn-hover-bs);
+  outline: none;
 }
 
 .btn-link:active {
@@ -545,7 +548,8 @@ img {
   background-repeat: repeat;
   border-radius: 16px;
   width: 1146px;
-  padding: 24px 23px 36px 20px;
+  padding: 24px 23px 30px 20px;
+  margin-bottom: 39px;
 }
 
 .info-heading {
@@ -567,9 +571,11 @@ img {
   grid-template-rows: repeat(2, min-content);
   justify-items: end;
 }
-.info-item{
+
+.info-item {
   position: relative;
 }
+
 .info-item::before {
   content: "";
   display: block;
@@ -581,18 +587,23 @@ img {
   top: -9px;
   left: -54px;
 }
-.info-item:first-child::before{
+
+.info-item:first-child::before {
   background-image: url("../img/ice-cream.svg");
 }
-.info-item:nth-child(2)::before{
+
+.info-item:nth-child(2)::before {
   background-image: url("../img/cow.svg");
 }
-.info-item:nth-child(3)::before{
+
+.info-item:nth-child(3)::before {
   background-image: url("../img/leaf.svg");
 }
-.info-item:last-child::before{
+
+.info-item:last-child::before {
   background-image: url("../img/thermometer.svg");
 }
+
 .info-text {
   margin: 0;
   width: 485px;
@@ -603,6 +614,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .blog-news {
@@ -613,15 +625,18 @@ img {
   background-image: url("../img/strawberry-background.png");
   background-position: center;
   background-repeat: no-repeat;
+  padding: 18px 21px 89px;
 }
 
 .blog-news .excerpt {
   margin: 0;
   font-weight: 500;
+  margin-bottom: 2px;
 }
 
 .blog-news__heading {
   margin: 0;
+  width: 287px;
 }
 
 .blog-news__link {
@@ -632,13 +647,16 @@ img {
   border-bottom: 2px solid var(--text-about-us);
 }
 
+
 .subscription {
   width: 560px;
   background-image: url("../img/post-background.png");
+  background-color: var(--blue-post);
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 16px;
   color: var(--subscription-text);
+  padding: 5px 6px 5px;
 }
 
 .subscription-layout {
@@ -646,12 +664,38 @@ img {
   margin: 0 auto;
   background-color: var(--milk-white-bg);
   border-radius: 16px;
+  padding: 25px 16px 35px 20px;
 }
 
 .subscription__text {
+  width: 512px;
   margin: 0;
+  margin-bottom: 40px;
 }
+.sub-form{
+  display: flex;
+  flex-wrap: wrap;
+}
+.sub-form .sub-email{
+  padding: 0;
+  width: 368px;
+  height: 44px;
+  background: var(--basic-white);
+  border: 1px solid rgba(var(--input-email), 0.52);
+  border-radius: 6px;
+  padding-left: 14px;
+  margin-right: 8px;
+}
+.sub-email::placeholder{
+  font-weight: normal;
+  line-height: 24px;
+  opacity: 1;
+  color: var(--placegolder-sub);
 
+}
+.sub-btn{
+  padding: 9px 20px 11px;
+}
 /*fooer*/
 /*index-footer*/
 .map {
@@ -663,32 +707,56 @@ img {
   object-fit: cover;
   height: 430px;
 }
-
+.contacts-layout{
+  width: 1200px;
+  height: 430px;
+  position: absolute;
+  top: 0;
+  margin-left: -600px;
+  left: 50%;
+}
 .index-footer .contacts {
   width: 303px;
   position: absolute;
-  top: 0;
+  top: 61px;
+  right: 27px;
   background-color: var(--white-contacts);
   color: var(--text-about-us);
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
   border-radius: 16px;
+  padding: 31px 25px 31px;
 }
 
 .contacts > p {
   margin: 0;
 }
-
-.contacts__address {
-  font-weight: bold;
+.contacts__address-text{
+  width: 155px;
 }
-
-.contacts__tel {
+.contacts .contacts__address {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: -3px;
+  margin-bottom: 23px;
+}
+.contacts .contacts__tel-text{
+  margin-bottom: 1px;
+}
+.contacts .contacts__tel {
   color: var(--text-about-us);
   font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
 }
-
+.contacts .contacts__time{
+  margin-bottom: 26px;
+}
+.contacts .contacts-modal-form-link{
+  padding: 10px 28px;
+}
 .footer {
   width: 1200px;
   margin: 0 auto;
