@@ -426,6 +426,9 @@ img {
 }
 
 /*bestsellers*/
+.bestsellers{
+  margin-bottom: 40px;
+}
 .bestsellers-list {
   margin: 0;
   padding: 0;
@@ -437,10 +440,23 @@ img {
 
 .bestsellers-section {
   width: 267px;
+  position: relative;
 }
 
 .ice-img {
   border-radius: 50%;
+  margin-bottom: 7px;
+}
+
+.bestsellers-section::before {
+  content: "";
+  width: 61px;
+  height: 61px;
+  display: block;
+  position: absolute;
+  background-image: url("../img/hit.svg");
+  background-size: 61px 61px;
+  background-repeat: no-repeat;
 }
 
 .ice-heading {
@@ -455,11 +471,29 @@ img {
   font-size: 45px;
   line-height: 45px;
   margin: 0;
+  position: absolute;
+  top: 207px;
+  display: flex;
+  align-items: flex-end;
+  max-width: 100%;
+  z-index: 1;
 }
 
 .ice-price > span {
   font-size: 30px;
   line-height: 35px;
+  padding-left: 7px;
+  display: flex;
+
+}
+.ice-price > span:before{
+  content: "";
+  display: block;
+  width: 37px;
+  height: 32px;
+  background-image: url("../img/ruble.svg");
+  background-size: 37px 32px;
+
 }
 
 .ice-link {
