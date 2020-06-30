@@ -445,13 +445,29 @@ img {
   border-bottom: 1px solid transparent;
   text-align: center;
 }
-.bestsellers-section:hover{
+.bestsellers-hover{
+  display: none;
+}
+.bestsellers-section:focus{
+  outline: none;
+}
+.bestsellers-section:hover .bestsellers-hover,
+.bestsellers-section:focus .bestsellers-hover{
   background-color: rgba(var(--white-opacity), 0.2);
   box-shadow: 0px 20px 20px rgba(var(--black-opacity), 0.2);
   border-radius: 4px;
+  position: absolute;
+  z-index: -2;
+  min-height: 122%;
+  width: 293px;
+  left: -12px;
+  top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  outline: none;
 }
-.bestsellers-section:hover .ice-link{
-  display: block;
+.ice-link{
   width: 200px;
   margin-left: auto;
   margin-right: auto;
@@ -481,6 +497,7 @@ img {
   font-weight: 500;
   font-size: inherit;
   text-align: center;
+  margin-bottom: 2px;
 }
 
 .ice-price {
@@ -513,9 +530,6 @@ img {
 
 }
 
-.ice-link {
-  display: none;
-}
 
 /*about us*/
 .about-us {
