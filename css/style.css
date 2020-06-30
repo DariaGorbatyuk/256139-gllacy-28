@@ -441,6 +441,23 @@ img {
 .bestsellers-section {
   width: 267px;
   position: relative;
+  z-index: 1;
+  border-bottom: 1px solid transparent;
+  text-align: center;
+}
+.bestsellers-section:hover{
+  background-color: rgba(var(--white-opacity), 0.2);
+  box-shadow: 0px 20px 20px rgba(var(--black-opacity), 0.2);
+  border-radius: 4px;
+}
+.bestsellers-section:hover .ice-link{
+  display: block;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px 16px;
+  margin-top: 11px;
+  margin-bottom: 21px;
 }
 
 .ice-img {
