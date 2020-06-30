@@ -53,7 +53,7 @@
   --input-email: 178, 178, 178;
   --text-about-us: #323232;
   --subscription-text: #5A5A5A;
- --placegolder-sub: #999999;
+  --placegolder-sub: #999999;
   --black-opacity: 0, 0, 0;
 }
 
@@ -672,11 +672,13 @@ img {
   margin: 0;
   margin-bottom: 40px;
 }
-.sub-form{
+
+.sub-form {
   display: flex;
   flex-wrap: wrap;
 }
-.sub-form .sub-email{
+
+.sub-form .sub-email {
   padding: 0;
   width: 368px;
   height: 44px;
@@ -686,16 +688,19 @@ img {
   padding-left: 14px;
   margin-right: 8px;
 }
-.sub-email::placeholder{
+
+.sub-email::placeholder {
   font-weight: normal;
   line-height: 24px;
   opacity: 1;
   color: var(--placegolder-sub);
 
 }
-.sub-btn{
+
+.sub-btn {
   padding: 9px 20px 11px;
 }
+
 /*fooer*/
 /*index-footer*/
 .map {
@@ -707,7 +712,8 @@ img {
   object-fit: cover;
   height: 430px;
 }
-.contacts-layout{
+
+.contacts-layout {
   width: 1200px;
   height: 430px;
   position: absolute;
@@ -715,6 +721,7 @@ img {
   margin-left: -600px;
   left: 50%;
 }
+
 .index-footer .contacts {
   width: 303px;
   position: absolute;
@@ -732,9 +739,11 @@ img {
 .contacts > p {
   margin: 0;
 }
-.contacts__address-text{
+
+.contacts__address-text {
   width: 155px;
 }
+
 .contacts .contacts__address {
   font-weight: bold;
   font-size: 18px;
@@ -742,29 +751,37 @@ img {
   margin-top: -3px;
   margin-bottom: 23px;
 }
-.contacts .contacts__tel-text{
+
+.contacts .contacts__tel-text {
   margin-bottom: 1px;
 }
+
 .contacts .contacts__tel {
   color: var(--text-about-us);
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
 }
-.contacts .contacts__time{
+
+.contacts .contacts__time {
   margin-bottom: 26px;
 }
-.contacts .contacts-modal-form-link{
+
+.contacts .contacts-modal-form-link {
   padding: 10px 28px;
 }
+
 .footer {
   width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 293px 560px 293px;
+  grid-template-columns: 267px 560px 267px;
   grid-auto-rows: min-content;
   align-items: center;
   justify-items: center;
+  column-gap: 26px;
+  padding-top: 10px;
+  padding-bottom: 25px;
 }
 
 .socials {
@@ -777,6 +794,10 @@ img {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+}
+
+.socials-item {
+  margin-right: 7px;
 }
 
 .socials-link::before {
@@ -823,6 +844,16 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+}
+
+.useful-item > a {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.useful-item.heart > a {
+  font-weight: bold;
 }
 
 .useful-item.heart::before {
