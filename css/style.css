@@ -426,9 +426,10 @@ img {
 }
 
 /*bestsellers*/
-.bestsellers{
+.bestsellers {
   margin-bottom: 37px;
 }
+
 .bestsellers-list {
   margin: 0;
   padding: 0;
@@ -445,14 +446,17 @@ img {
   border-bottom: 1px solid transparent;
   text-align: center;
 }
-.bestsellers-hover{
+
+.bestsellers-hover {
   display: none;
 }
-.bestsellers-section:focus{
+
+.bestsellers-section:focus {
   outline: none;
 }
+
 .bestsellers-section:hover .bestsellers-hover,
-.bestsellers-section:focus .bestsellers-hover{
+.bestsellers-section:focus .bestsellers-hover {
   background-color: rgba(var(--white-opacity), 0.2);
   box-shadow: 0px 20px 20px rgba(var(--black-opacity), 0.2);
   border-radius: 4px;
@@ -467,7 +471,8 @@ img {
   align-items: flex-end;
   outline: none;
 }
-.ice-link{
+
+.ice-link {
   width: 200px;
   margin-left: auto;
   margin-right: auto;
@@ -520,7 +525,8 @@ img {
   display: flex;
 
 }
-.ice-price > span:before{
+
+.ice-price > span:before {
   content: "";
   display: block;
   width: 37px;
@@ -539,7 +545,7 @@ img {
   background-repeat: repeat;
   border-radius: 16px;
   width: 1146px;
-  padding: 0;
+  padding: 24px 23px 36px 20px;
 }
 
 .info-heading {
@@ -547,25 +553,49 @@ img {
   font-weight: 500;
   font-size: 24px;
   line-height: 30px;
+  margin-bottom: 16px;
 }
 
 .info-list {
   padding: 0;
   margin: 0;
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 540px 537px;
+  column-gap: 26px;
+  row-gap: 23px;
+  grid-template-rows: repeat(2, min-content);
+  justify-items: end;
 }
-
-.info-item {
-  flex-basis: 560px;
+.info-item{
+  position: relative;
 }
-
+.info-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-size: 49px 49px;
+  width: 49px;
+  height: 49px;
+  background-repeat: no-repeat;
+  top: -9px;
+  left: -54px;
+}
+.info-item:first-child::before{
+  background-image: url("../img/ice-cream.svg");
+}
+.info-item:nth-child(2)::before{
+  background-image: url("../img/cow.svg");
+}
+.info-item:nth-child(3)::before{
+  background-image: url("../img/leaf.svg");
+}
+.info-item:last-child::before{
+  background-image: url("../img/thermometer.svg");
+}
 .info-text {
   margin: 0;
   width: 485px;
-  margin-left: auto;
 }
 
 /*columns*/
