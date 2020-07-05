@@ -832,24 +832,26 @@ img {
 }
 
 .useful-list {
-  width: 327px;
+  width: 330px;
   margin: 0;
   padding: 0;
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 143px 185px;
 }
 
 .useful-item {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
+  margin-left: 14px;
 
+}
+.useful-item.heart{
+  position: relative;
+}
 .useful-item > a {
   font-weight: normal;
   font-size: 13px;
   line-height: 18px;
+  border-bottom: 1px solid rgba(var(--white-opacity), 0.2);
 }
 
 .useful-item.heart > a {
@@ -862,6 +864,9 @@ img {
   width: 15px;
   height: 13px;
   background-image: url("../img/heart.svg");
+  position: absolute;
+  left: -23px;
+  top: 6px;
 }
 
 .developer {
