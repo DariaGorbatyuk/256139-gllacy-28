@@ -47,6 +47,7 @@
   --btn-hover-bs: #AC1000; /*box-shadow*/
   --btn-bs: rgba(172, 16, 0, 0.64);
   --btn-active-bs: #942718;
+  --link: #FFBC9E;
   --blue-post: lightblue;
 
   --text-shadow: 160, 32, 11;
@@ -875,6 +876,9 @@ img {
 
 .developer > p {
   margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: normal;
 }
 
 /*modal*/
