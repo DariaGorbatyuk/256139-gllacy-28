@@ -38,6 +38,7 @@
   --violet-bg: #B2A19A;
   --waffle: #EEE4CB;
   --milk-white-bg: #F8F7F4;
+  --search-border: #D3D3D2;
 
   --raspberry-bg: #921335;
   --chocolate-bg: #5E3A2C;
@@ -60,6 +61,7 @@
   --placegolder-sub: #999999;
   --black-opacity: 0, 0, 0;
   --new-catalog: 50, 50, 50;
+  --inp-border-active: 46, 136, 228;
 }
 
 *, *::before, *::after {
@@ -302,6 +304,9 @@ img {
   border-radius: 20px;
   padding: 6px 16px 7px;
 }
+.user-navigation__link:focus{
+  outline: none;
+}
 
 .user-navigation__link span {
   padding-left: 8px;
@@ -319,24 +324,66 @@ img {
   margin: auto;
 }
 
-.user-navigation__link:hover,
-.user-navigation__link:focus,
+.user-navigation__item:hover .user-navigation__link,
+.user-navigation__item:focus-within .user-navigation__link,
 .user-navigation__link:active {
   background-color: var(--basic-white);
   color: var(--text-about-us);
 }
 
-.user-navigation__link:hover svg,
-.user-navigation__link:focus svg,
+.user-navigation__item:hover svg,
+.user-navigation__item:focus-within svg,
 .user-navigation__link:active svg {
   fill: var(--text-about-us);
 }
-
-
+.user-navigation__item.search{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
 /*search-form*/
 .search-form {
   display: none;
+  min-width: 341px;
+  min-height: 84px;
+  background-color: var(--milk-white-bg);
+  position: absolute;
+  top: 59px;
+  box-shadow: 0px 20px 20px rgba(var(--black-opacity), 0.4);
+  border-radius: 4px;
+  padding: 20px 15px;
 }
+.search-form__inp{
+  width: 311px;
+  height: 44px;
+  background: var(--basic-white);
+  border: 1px solid var(--search-border);
+  border-radius: 4px;
+  padding-left: 14px;
+  font-weight: normal;
+  color: var(--text-about-us);
+}
+.search-form__inp:hover{
+  border: 2px solid rgba(var(--input-email), 0.52);
+}
+.search-form__inp:focus,
+.search-form__inp:active{
+  border: 2px solid rgba(var(--inp-border-active), 0.52);
+  outline: none;
+}
+.search-form__inp::placeholder{
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--placegolder-sub);
+  opacity: 1;
+}
+.user-navigation__item.search:hover .search-form,
+.user-navigation__item.search:focus-within .search-form{
+  display: block;
+}
+
 
 /*sign-up-form*/
 .sign-up-form {
