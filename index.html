@@ -45,7 +45,7 @@
           <input class="search-form__inp" id="search-text" type="text" name="search-text" placeholder="Крем-брюле">
         </form>
       </li>
-      <li class="user-navigation__item">
+      <li class="user-navigation__item sign-up">
         <a class="user-navigation__link sign-up" href="#">
           <svg width="20" height="19" viewBox="0 0 20 19" fill="white" xmlns="http://www.w3.org/2000/svg">
             <path d="M6.04 14.88L12.96 9.5L6.04 4.13V7.04H0V11.96H6.04V14.88Z"/>
@@ -55,17 +55,19 @@
           <span>Вход</span>
         </a>
         <form class="sign-up-form" method="post" action="https://echo.htmlacademy.ru">
-          <div>
+          <div class="sign-up-email__layout">
             <label for="sign-up-email" class="visually-hidden">Логин</label>
-            <input id="sign-up-email" type="email" name="email" placeholder="email@example.com">
+            <input class="sign-up-email sign-up__inp" id="sign-up-email" type="email" name="email" placeholder="email@example.com">
           </div>
           <div>
             <label for="sign-up-password" class="visually-hidden">Пароль</label>
-            <input id="sign-up-password" type="password" name="password" placeholder="......">
+            <input class="sign-up-password sign-up__inp" id="sign-up-password" type="password" name="password" placeholder="......">
           </div>
-          <button type="submit">Войти</button>
-          <a href="#">Забыли пароль?</a>
-          <a href="#">Новая регистрация</a>
+          <button class="btn-link sign-up__btn" type="submit">Войти</button>
+          <div class="sign-up__layout">
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a>
+          </div>
         </form>
       </li>
       <li class="user-navigation__item">

@@ -384,10 +384,58 @@ img {
   display: block;
 }
 
-
 /*sign-up-form*/
+.user-navigation__item.sign-up{
+  position: relative;
+}
 .sign-up-form {
   display: none;
+  position: absolute;
+  top: 36px;
+  right: 0px;
+  min-width: 277px;
+  min-height: 214px;
+  background: var(--milk-white-bg);
+  box-shadow: 0px 20px 20px rgba(var(--black-opacity), 0.4);
+  border-radius: 4px;
+  padding: 20px 17px 22px 19px;
+}
+.user-navigation__item.sign-up:hover .sign-up-form,
+.user-navigation__item:focus-within .sign-up-form{
+  display: block;
+}
+.sign-up-email__layout{
+  margin-bottom: 20px;
+}
+.sign-up__inp{
+  width: 241px;
+  height: 44px;
+  background: var(--basic-white);
+  border: 1px solid var(--search-border);
+  border-radius: 4px;
+  padding-left: 14px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--text-about-us);
+}
+.sign-up-password{
+  padding-bottom: 7px;
+}
+
+.sign-up__inp:hover{
+  border: 2px solid rgba(var(--input-email), 0.52);
+}
+.sign-up__inp:focus,
+.sign-up__inp:active{
+  border: 2px solid rgba(var(--inp-border-active), 0.52);
+  outline: none;
+}
+.sign-up__inp::placeholder{
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  opacity: 1;
 }
 
 .navigation__work-time,
