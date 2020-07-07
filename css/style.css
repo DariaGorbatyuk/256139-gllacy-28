@@ -187,18 +187,14 @@ img {
   font-weight: bold;
   line-height: 18px;
 }
-.menu-site__item.catalog:hover .menu-site__link,
-.menu-site__item.catalog:focus-within .menu-site__link,
-.menu-site__link:hover,
-.menu-site__link:focus {
+.menu-site__item:hover .menu-site__link,
+.menu-site__item:focus-within .menu-site__link{
   background-color: var(--basic-white);
   outline: none;
 }
 
-.menu-site__item.catalog:hover span,
-.menu-site__item.catalog:focus-within span,
-.menu-site__link:hover span,
-.menu-site__link:focus span {
+.menu-site__item:hover span,
+.menu-site__item:focus-within span{
   color: var(--text-about-us);
   border-bottom: transparent;
 }
