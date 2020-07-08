@@ -1356,8 +1356,25 @@ fieldset {
 
 .filter-submit {
   width: 144px;
+  bottom: 0;
+  background: rgba(var(--white-opacity), 0.2);
+  color: var(--basic-white);
+  border: 2px solid var(--basic-white);
+  border-radius: 20px;
+  padding: 9px 0px 9px;
+  font-weight: 500;
 }
-
+.filter-submit:hover,
+.filter-submit:focus{
+  background-color: var(--basic-white);
+  color: var(--text-about-us);
+  outline: none;
+}
+.filter-submit:active{
+  background-color: var(--basic-white);
+  color: var(--text-about-us);
+  box-shadow: inset 0px 2px 1px var(--menu-shadow-active);
+}
 /*footer*/
 /*index-footer*/
 .map {
