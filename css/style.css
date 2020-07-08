@@ -476,7 +476,14 @@ img {
   margin-bottom: 11px;
   line-height: 9px;
 }
-
+.work-time__layout{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: auto;
+  width: 167px;
+  align-items: flex-end;
+}
 /*main*/
 /*slider*/
 .slider {
