@@ -80,7 +80,8 @@
             <path fill="#E84D37" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"/>
             <circle fill="#343434" cx="6.984" cy="18" r="2"/>
             <circle fill="#343434" cx="15.984" cy="18" r="2"/>
-            <path fill="#343434" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/>
+            <path fill="#343434"
+                  d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/>
           </svg>
           <span>2 товара</span>
         </a>
@@ -88,14 +89,16 @@
           <ul class="goods-list">
             <li class="goods-item">
               <button class="basket__delete-item" type="button" aria-label="Удалить товар"></button>
-              <img class="basket-img" src="./img/icy-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="33" height="33">
+              <img class="basket-img" src="./img/icy-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"
+                   width="33" height="33">
               <p class="basket__description-item">Пломбир с апельсиновым джемом</p>
               <p class="basket__weight">1,5 кг х <span>200 руб.</span></p>
               <span class="basket__price">300 руб.</span>
             </li>
             <li class="goods-item">
               <button class="basket__delete-item" type="button" aria-label="Удалить товар"></button>
-              <img class="basket-img" src="./img/icy-2.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="33" height="33">
+              <img class="basket-img" src="./img/icy-2.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада"
+                   width="33" height="33">
               <p class="basket__description-item">Клубничный пломбир с присыпкой из белого шоколада</p>
               <p class="basket__weight">1,5 кг х <span>300 руб.</span></p>
               <span class="basket__price">450 руб.</span>
@@ -124,18 +127,21 @@
   </ul>
 </header>
 <main>
-  <h1>Сливочное мороженое</h1>
-  <section class="filter">
+  <h1 class="container catalog-header">Сливочное мороженое</h1>
+  <section class="filter container">
     <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
       <fieldset class="filter-sort">
         <legend>Сортировка:</legend>
         <label><span class="visually-hidden">Виды сортировки</span>
-          <select name="sort">
+          <select class="filter-sort__select" name="sort">
             <option value="by-popularity">по популярности</option>
             <option value="cheap-at-first">сначала недорогие</option>
             <option value="expensive-at-first">сначала дорогие</option>
             <option value="by-fat-content">по жирности</option>
           </select>
+          <svg class="filter-sort-arrow" width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.5 10L0 0H11" />
+          </svg>
         </label>
       </fieldset>
       <fieldset class="filter-price">
@@ -158,47 +164,53 @@
       </fieldset>
       <fieldset class="filter-fat-content">
         <legend>Жирность:</legend>
-        <div>
-          <input id="fat-content-0" type="radio" name="fat-content" value="0">
-          <label for="fat-content-0">0%</label>
-        </div>
-        <div>
-          <input id="fat-content-less10" type="radio" name="fat-content" value="<10%" checked>
-          <label for="fat-content-less10">до 10%</label>
-        </div>
-        <div>
-          <input id="fat-content-less30" type="radio" name="fat-content" value="<30%">
-          <label for="fat-content-less30">до 30%</label>
-        </div>
-        <div>
-          <input id="fat-content-above30" type="radio" name="fat-content" value=">30%">
-          <label for="fat-content-above30">выше 30%</label>
-        </div>
+        <ul class="filter-fat-content__list">
+          <li class="filter-fat-content__item">
+            <input class="filter-fat-content__inp" id="fat-content-0" type="radio" name="fat-content" value="0">
+            <label for="fat-content-0">0%</label>
+          </li>
+          <li class="filter-fat-content__item">
+            <input class="filter-fat-content__inp" id="fat-content-less10" type="radio" name="fat-content" value="<10%"
+                   checked>
+            <label for="fat-content-less10">до 10%</label>
+          </li>
+          <li class="filter-fat-content__item">
+            <input class="filter-fat-content__inp" id="fat-content-less30" type="radio" name="fat-content" value="<30%">
+            <label for="fat-content-less30">до 30%</label>
+          </li>
+          <li class="filter-fat-content__item">
+            <input class="filter-fat-content__inp" id="fat-content-above30" type="radio" name="fat-content"
+                   value=">30%">
+            <label for="fat-content-above30">выше 30%</label>
+          </li>
+        </ul>
       </fieldset>
       <fieldset class="filter-additive">
         <legend>Наполнители:</legend>
-        <div>
-          <input id="additive-chocolate" type="checkbox" name="chocolate" checked>
-          <label class="filter-additive__label" for="additive-chocolate">шоколадные</label>
-        </div>
-        <div>
-          <input id="additive-sugar-powders" type="checkbox" name="sugar-powders" checked>
-          <label class="filter-additive__label" for="additive-sugar-powders">сахарные присыпки</label>
-        </div>
-        <div>
-          <input id="additive-fruits" type="checkbox" name="fruits">
-          <label class="filter-additive__label" for="additive-fruits">фрукты</label>
-        </div>
-        <div>
-          <input id="additive-syrups" type="checkbox" name="syrups">
-          <label class="filter-additive__label" for="additive-syrups">сиропы</label>
-        </div>
-        <div>
-          <input id="additive-marmalade" type="checkbox" name="marmalade">
-          <label class="filter-additive__label" for="additive-marmalade">джемы</label>
-        </div>
+        <ul class="filter-additive__list">
+          <li class="filter-additive__item">
+            <input class="filter-additive__inp" id="additive-chocolate" type="checkbox" name="chocolate" checked>
+            <label class="filter-additive__label" for="additive-chocolate">шоколадные</label>
+          </li>
+          <li class="filter-additive__item">
+            <input class="filter-additive__inp" id="additive-sugar-powders" type="checkbox" name="sugar-powders" checked>
+            <label class="filter-additive__label" for="additive-sugar-powders">сахарные присыпки</label>
+          </li>
+          <li class="filter-additive__item">
+            <input class="filter-additive__inp" id="additive-fruits" type="checkbox" name="fruits">
+            <label class="filter-additive__label" for="additive-fruits">фрукты</label>
+          </li>
+          <li class="filter-additive__item">
+            <input class="filter-additive__inp" id="additive-syrups" type="checkbox" name="syrups">
+            <label class="filter-additive__label" for="additive-syrups">сиропы</label>
+          </li>
+          <li class="filter-additive__item">
+            <input class="filter-additive__inp" id="additive-marmalade" type="checkbox" name="marmalade">
+            <label class="filter-additive__label" for="additive-marmalade">джемы</label>
+          </li>
+        </ul>
       </fieldset>
-      <button type="submit">Применить</button>
+      <button class="filter-submit" type="submit">Применить</button>
     </form>
   </section>
 
@@ -206,7 +218,8 @@
     <ul class="product-list">
       <li class="product-item">
         <article class="product-section">
-          <img src="./img/hit-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
+          <img src="./img/hit-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267"
+               height="267">
           <p>310 ₽<span>/кг</span></p>
           <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
           <a href="#">Быстрый просмотр</a>
@@ -246,7 +259,8 @@
       </li>
       <li class="product-item">
         <article class="product-section">
-          <img src="./img/creamy-blueberry.jpg" alt="Сливочно-черничное с цельными ягодами черники" width="267" height="267">
+          <img src="./img/creamy-blueberry.jpg" alt="Сливочно-черничное с цельными ягодами черники" width="267"
+               height="267">
           <p>410 ₽<span>/кг</span></p>
           <h3>Сливочно-черничное с цельными ягодами черники</h3>
           <a href="#">Быстрый просмотр</a>
@@ -286,7 +300,8 @@
       </li>
       <li class="product-item">
         <article class="product-section">
-          <img src="./img/pieces-of-chocolate.jpg" alt="Сливочное с кусочками черного шоколада" width="267" height="267">
+          <img src="./img/pieces-of-chocolate.jpg" alt="Сливочное с кусочками черного шоколада" width="267"
+               height="267">
           <p>355 ₽<span>/кг</span></p>
           <h3>Сливочное с кусочками черного шоколада</h3>
           <a href="#">Быстрый просмотр</a>

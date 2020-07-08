@@ -44,6 +44,7 @@
   --chocolate-bg: #5E3A2C;
   --gray: #ABABAB;
   --black: #000000;
+  --arrow-select: #ECF1EE;
   --basket-line: #CACAC7;
 
   --btn-liner-grad1: #F26843;
@@ -1083,8 +1084,88 @@ img {
 .sub-btn {
   padding: 9px 20px 11px;
 }
+/*catalog*/
+.catalog-header{
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 41px;
+}
+/*filter-form*/
+.filter-form{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.filter-form {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--basic-white);
+}
+.filter-form legend{
+  font-size: 14px;
+}
+fieldset{
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+.filter-sort{
+  width: 196px;
+  position: relative;
+}
+.filter-sort__select{
+  background: rgba(var(--white-opacity), 0.2);
+  border-radius: 20px;
+  border: 0;
+  padding: 9px 35px 9px 16px;
+  color: var(--basic-white);
+  -webkit-appearance: none;
+  font-weight: 500;
+}
+.filter-sort-arrow{
+  position: absolute;
+  fill: var(--arrow-select);
+  top: 29px;
+  left: 171px;
+}
+.filter-sort__select:hover,
+.filter-sort__select:focus{
+  color: var(--text-about-us);
+  outline: none;
+}
+.filter-sort__select:hover +.filter-sort-arrow,
+.filter-sort__select:focus +.filter-sort-arrow{
+  fill: var(--text-about-us);
+}
 
-/*fooer*/
+.filter-price{
+  width: 218px;
+}
+.filter-fat-content{
+  width: 425px;
+}
+.filter-fat-content__list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.filter-additive{
+  width: 711px;
+}
+.filter-additive__list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.filter-submit{
+  width: 144px;
+}
+  /*footer*/
 /*index-footer*/
 .map {
   position: relative;
