@@ -1285,13 +1285,21 @@ fieldset {
   position: absolute;
   width: 25px;
   height: 25px;
-  background-image: url("../img/radio-off.svg");
+  background-image: url("../img/radio-off-active.svg");
   background-repeat: no-repeat;
   top: -3px;
   left: -34px;
+  opacity: 0.8;
 }
 .filter-fat-content__inp:checked + .fat-content__label::before{
-  background-image: url("../img/radio-on.svg");
+  background-image: url("../img/radio-on-active.svg");
+}
+.fat-content__label:hover::before,
+.fat-content__label:focus::before{
+  opacity: 1;
+}
+.filter-fat-content__inp:disabled + .fat-content__label::before{
+  opacity: 0.4;
 }
 .filter-additive {
   width: 711px;
