@@ -7,49 +7,85 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="site-page">
-<header>
+<header class="header container">
   <nav class="navigation">
     <a class="logo" href="index.html">
-      <img src="./img/logo.svg" alt="Логотип компании"></a>
+      <img src="./img/logo.svg" alt="Логотип компании">
+    </a>
     <ul class="menu-site">
-      <li class="menu-site__item catalog active"><a href="#">Каталог</a>
+      <li class="menu-site__item catalog active">
+        <a class="menu-site__link catalog" href="#"><span>Каталог</span></a>
         <ul class="catalog-list">
-          <li class="catalog-item"><a href="#" class="catalog-list">Новинки</a></li>
-          <li class="catalog-item"><a class="catalog-list">Сливочное</a></li>
-          <li class="catalog-item"><a href="#" class="catalog-list">Щербеты</a></li>
-          <li class="catalog-item"><a href="#" class="catalog-list">Фруктовый лед</a></li>
-          <li class="catalog-item"><a href="#" class="catalog-list">Мелорин</a></li>
+          <li class="catalog-item new"><a href="#" class="catalog-link">Новинки</a></li>
+          <li class="catalog-item"><a class="catalog-link active">Сливочное</a></li>
+          <li class="catalog-item"><a href="#" class="catalog-link">Щербеты</a></li>
+          <li class="catalog-item"><a href="#" class="catalog-link">Фруктовый лед</a></li>
+          <li class="catalog-item"><a href="#" class="catalog-link">Мелорин</a></li>
         </ul>
       </li>
-      <li class="menu-site__item"><a href="#">Доставка и оплата</a></li>
-      <li class="menu-site__item"><a href="#">О компании</a></li>
+      <li class="menu-site__item">
+        <a class="menu-site__link" href="#"><span>Доставка и оплата</span></a>
+      </li>
+      <li class="menu-site__item">
+        <a class="menu-site__link" href="#"><span>О компании</span></a>
+      </li>
     </ul>
     <ul class="user-navigation">
       <li class="user-navigation__item search">
-        <span class="visually-hidden">
-          <a href="#">Поиск</a>
-        </span>
+        <a class="user-navigation__link search" href="#">
+          <span class="visually-hidden">Поиск</span>
+          <svg class="search-svg" fill="white" xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+               viewBox="0 0 17 17">
+            <path
+              d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
+          </svg>
+        </a>
         <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
           <label for="search-text" class="visually-hidden">Поиск</label>
-          <input id="search-text" type="text" name="search-text" placeholder="Крем-брюле">
+          <input class="search-form__inp" id="search-text" type="text" name="search-text" placeholder="Крем-брюле">
         </form>
       </li>
-      <li class="user-navigation__item sign-up">Вход
+      <li class="user-navigation__item sign-up">
+        <a class="user-navigation__link sign-up" href="#">
+          <svg width="20" height="19" viewBox="0 0 20 19" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.04 14.88L12.96 9.5L6.04 4.13V7.04H0V11.96H6.04V14.88Z"/>
+            <path
+              d="M18 0H5C4.46957 0 3.96086 0.210714 3.58579 0.585786C3.21071 0.960859 3 1.46957 3 2V4H5V2H18V17H5V15H3V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19H18C18.5304 19 19.0391 18.7893 19.4142 18.4142C19.7893 18.0391 20 17.5304 20 17V2C20 1.46957 19.7893 0.960859 19.4142 0.585786C19.0391 0.210714 18.5304 0 18 0Z"/>
+          </svg>
+          <span>Вход</span>
+        </a>
         <form class="sign-up-form" method="post" action="https://echo.htmlacademy.ru">
-          <div>
+          <div class="sign-up-email__layout">
             <label for="sign-up-email" class="visually-hidden">Логин</label>
-            <input id="sign-up-email" type="email" name="email" placeholder="email@example.com">
+            <input class="sign-up-email sign-up__inp" id="sign-up-email" type="email" name="email"
+                   placeholder="email@example.com">
           </div>
-          <div>
+          <div class="sign-up-password__layout">
             <label for="sign-up-password" class="visually-hidden">Пароль</label>
-            <input id="sign-up-password" type="password" name="password" placeholder="......">
+            <input class="sign-up-password sign-up__inp" id="sign-up-password" type="password" name="password"
+                   placeholder="......">
           </div>
-          <button type="submit">Войти</button>
-          <a href="#">Забыли пароль?</a>
-          <a href="#">Новая регистрация</a>
+          <div class="sign-up-bottom__layout">
+            <button class="btn-link sign-up__btn" type="submit">Войти</button>
+            <div class="sign-up-link__layout">
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+            </div>
+          </div>
         </form>
       </li>
-      <li class="user-navigation__item basket active">2 товара
+      <li class="user-navigation__item">
+        <a class="user-navigation__link basket active" href="#">
+          <svg fill="white" xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
+            <g>
+              <path
+                d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/>
+              <circle cx="6.984" cy="18" r="2"/>
+              <circle cx="15.984" cy="18" r="2"/>
+            </g>
+          </svg>
+          <span>2 товара</span>
+        </a>
         <section class="basket-section">
           <ul class="goods-list">
             <li class="goods-item">
@@ -84,8 +120,10 @@
       <a href="catalog.html" class="breadcrumbs-link">Сливочное</a>
     </li>
   </ul>
-  <p>с 10 до 20, ежедневно</p>
-  <a href="tel: 8 812 450-25-25">8 812 450-25-25</a>
+  <div class="work-time__layout">
+    <p class="navigation__work-time">с 10 до 20, ежедневно</p>
+    <a class="navigation__tel" href="tel: 8 812 450-25-25">8 812 450-25-25</a>
+  </div>
 </header>
 <main>
   <h1>Сливочное мороженое</h1>
