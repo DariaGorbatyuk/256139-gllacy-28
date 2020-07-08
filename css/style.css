@@ -1109,6 +1109,7 @@ input[type="checkbox"] {
   font-weight: bold;
   font-size: 35px;
   line-height: 41px;
+  margin-bottom: 26px;
 }
 
 /*filter-form*/
@@ -1116,9 +1117,8 @@ input[type="checkbox"] {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-}
-
-.filter-form {
+  width: 870px;
+  justify-content: space-between;
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
@@ -1127,6 +1127,9 @@ input[type="checkbox"] {
 
 .filter-form legend {
   font-size: 14px;
+  margin-bottom: 7px;
+  margin-left: 16px;
+  margin-right: 3px;
 }
 
 fieldset {
@@ -1178,8 +1181,7 @@ fieldset {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  width: 131px;
-  justify-content: space-between;
+  width: 100%;
 }
 
 .filter-price__inp {
@@ -1193,7 +1195,10 @@ fieldset {
   color: var(--basic-white);
   position: relative;
 }
-
+.filter-price__label{
+  margin-right: 10px;
+  margin-bottom: 4px;
+}
 .filter-price__label::after {
   content: "";
   display: block;
@@ -1202,11 +1207,11 @@ fieldset {
   height: 12px;
   background-image: url("../img/ruble-small.svg");
   top: 1px;
-  left: 67px;
+  left: 84px;
 }
 
 .filter-price__label:last-child::after {
-  left: 113px;
+  left: 137px;
 }
 
 .filter-price__inp::placeholder {
@@ -1310,6 +1315,7 @@ fieldset {
 
 .filter-additive {
   width: 711px;
+  margin-top: 14px;
 }
 
 .filter-additive__list {
@@ -1361,20 +1367,24 @@ fieldset {
   color: var(--basic-white);
   border: 2px solid var(--basic-white);
   border-radius: 20px;
-  padding: 9px 0px 9px;
+  padding: 8px 0px 8px;
   font-weight: 500;
+  margin-top: 36px;
 }
+
 .filter-submit:hover,
-.filter-submit:focus{
+.filter-submit:focus {
   background-color: var(--basic-white);
   color: var(--text-about-us);
   outline: none;
 }
-.filter-submit:active{
+
+.filter-submit:active {
   background-color: var(--basic-white);
   color: var(--text-about-us);
   box-shadow: inset 0px 2px 1px var(--menu-shadow-active);
 }
+
 /*footer*/
 /*index-footer*/
 .map {
