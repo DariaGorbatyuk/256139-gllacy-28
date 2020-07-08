@@ -140,26 +140,30 @@
             <option value="by-fat-content">по жирности</option>
           </select>
           <svg class="filter-sort-arrow" width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
-            <path d="M5.5 10L0 0H11" />
+            <path d="M5.5 10L0 0H11"/>
           </svg>
         </label>
       </fieldset>
       <fieldset class="filter-price">
-        <legend>Цена:</legend>
-        <label>
-          <span class="visually-hidden">От</span>
-          <input type="number" value="100" name="min-price">
-        </label>
-        <label>
-          <span class="visually-hidden">До</span>
-          <input type="number" value="500" name="max-price">
-        </label>
+        <div class="filter-price__layout-price">
+          <legend class="filter-price__legend">Цена:</legend>
+          <label class="filter-price__label">
+            <span class="visually-hidden">От</span>
+            <input class="filter-price__inp" type="text" placeholder="100" name="min-price">
+          </label>
+          <label class="filter-price__label">
+            <span class="visually-hidden">До</span>
+            <input class="filter-price__inp" type="text" placeholder="500" name="max-price">
+          </label>
+        </div>
         <div class="range-controls">
           <div class="scale">
-            <div class="bar"></div>
+            <div class="bar" style="
+            width: 56%;
+            left: 12%;"></div>
           </div>
-          <button class="toggle toggle-min" type="button"><span class="visually-hidden">Меньше</span></button>
-          <button class="toggle toggle-max" type="button"><span class="visually-hidden">Больше</span></button>
+          <button class="toggle toggle-min" type="button" style="left: 15%"><span class="visually-hidden">Меньше</span></button>
+          <button class="toggle toggle-max" type="button" style="left: 60%"><span class="visually-hidden" >Больше</span></button>
         </div>
       </fieldset>
       <fieldset class="filter-fat-content">
@@ -193,7 +197,8 @@
             <label class="filter-additive__label" for="additive-chocolate">шоколадные</label>
           </li>
           <li class="filter-additive__item">
-            <input class="filter-additive__inp" id="additive-sugar-powders" type="checkbox" name="sugar-powders" checked>
+            <input class="filter-additive__inp" id="additive-sugar-powders" type="checkbox" name="sugar-powders"
+                   checked>
             <label class="filter-additive__label" for="additive-sugar-powders">сахарные присыпки</label>
           </li>
           <li class="filter-additive__item">
