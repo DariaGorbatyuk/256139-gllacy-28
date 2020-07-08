@@ -130,7 +130,8 @@ img {
   box-shadow: inset 0px 2px 2px var(--btn-active-bs);
 }
 
-.visually-hidden {
+.visually-hidden,
+input[type="radio"] {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -1139,7 +1140,7 @@ fieldset {
 }
 
 .filter-sort__select {
-  background: rgba(var(--white-opacity), 0.2);
+  background-color: rgba(var(--white-opacity), 0.2);
   border-radius: 20px;
   border: 0;
   padding: 9px 35px 9px 16px;
@@ -1228,7 +1229,8 @@ fieldset {
   top: 16px;
   left: 20px;
 }
-.range-controls .bar{
+
+.range-controls .bar {
   width: 103px;
   height: 2px;
   background-color: var(--milk-white-bg);
@@ -1236,7 +1238,8 @@ fieldset {
   left: 20px;
   top: -1px;
 }
-.range-controls .toggle{
+
+.range-controls .toggle {
   padding: 0;
   width: 20px;
   height: 20px;
@@ -1247,27 +1250,49 @@ fieldset {
   top: 7px;
   left: 33px;
 }
-.range-controls .toggle-max{
+
+.range-controls .toggle-max {
   left: 136px;
 }
+
 .range-controls .toggle:hover,
 .range-controls .toggle:focus,
 .range-controls .toggle:active {
   transform: scale(1.2);
   cursor: pointer;
 }
+
 .filter-fat-content {
   width: 425px;
 }
 
 .filter-fat-content__list {
   margin: 0;
-  padding: 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  border-radius: 20px;
+  background: rgba(var(--white-opacity), 0.2);
+  padding: 10px 14px 10px 47px;
+  justify-content: space-between;
 }
-
+.fat-content__label{
+  position: relative;
+}
+.fat-content__label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  top: -3px;
+  left: -34px;
+}
+.filter-fat-content__inp:checked + .fat-content__label::before{
+  background-image: url("../img/radio-on.svg");
+}
 .filter-additive {
   width: 711px;
 }
