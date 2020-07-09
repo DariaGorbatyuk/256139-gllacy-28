@@ -340,21 +340,21 @@
 </footer>
 
 <section class="modal-connection">
-  <h2>Мы обязательно вам ответим!</h2>
+  <h2 class="connection__heading">Мы обязательно вам ответим!</h2>
   <form class="connection-form" method="post" action="https://echo.htmlacademy.ru">
     <div>
       <label for="connection-login" class="visually-hidden">Имя и Фамилия</label>
-      <input id="connection-login" type="text" name="login" placeholder="Имя Фамилия">
+      <input class="connection-inp small-inp" id="connection-login" type="text" name="login" placeholder="Имя Фамилия">
     </div>
     <div>
       <label for="connection-email" class="visually-hidden">Email</label>
-      <input id="connection-email" type="email" name="email" placeholder="email@example.com">
+      <input class="connection-inp small-inp" id="connection-email" type="email" name="email" placeholder="email@example.com">
     </div>
     <div>
       <label for="connection-message">Сообщение</label>
-      <textarea id="connection-message" name="message" cols="30" rows="10">В свободной форме</textarea>
+      <textarea class="connection-inp big-inp" id="connection-message" name="message" >В свободной форме</textarea>
     </div>
-    <button type="submit">Отправить</button>
+    <button class="btn-link connection-btn" type="submit">Отправить</button>
   </form>
 </section>
 </body>

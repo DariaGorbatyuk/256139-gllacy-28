@@ -133,6 +133,7 @@ img {
   background: linear-gradient(0deg, rgba(var(--black-opacity), 0.07), rgba(var(--black-opacity), 0.07)), linear-gradient(180deg, var(--btn-liner-grad1) 0%, var(--btn-liner-grad2) 100%);
   box-shadow: inset 0px 2px 2px var(--btn-active-bs);
 }
+
 .link {
   color: var(--basic-white);
   border-bottom: 1px solid rgba(var(--white-opacity), 0.2);
@@ -144,16 +145,19 @@ img {
   color: var(--link);
   border-bottom: 1px solid var(--link-opacity);
 }
-.link-black{
+
+.link-black {
   color: var(--text-about-us);
   border-bottom: 1px solid rgba(var(--new-catalog), 0.3);
 }
+
 .link-black:hover,
 .link-black:focus,
-.link-black:active{
+.link-black:active {
   color: var(--link-red);
   border-bottom: 1px solid var(--link-red-bottom);
 }
+
 .visually-hidden,
 input[type="radio"],
 input[type="checkbox"] {
@@ -1071,22 +1075,26 @@ input[type="checkbox"] {
   font-size: 24px;
   line-height: 30px;
 }
-.blog-news__line{
+
+.blog-news__line {
   stroke: #353535;
   position: absolute;
   top: 68px;
   left: 21px;
 }
+
 .blog-news__link:hover,
 .blog-news__link:focus,
-.blog-news__link:active{
+.blog-news__link:active {
   color: var(--link-red);
 }
+
 .blog-news__link:hover .blog-news__line,
 .blog-news__link:focus .blog-news__line,
-.blog-news__link:active .blog-news__line{
+.blog-news__link:active .blog-news__line {
   stroke: var(--link-red-bottom);
 }
+
 .subscription {
   width: 560px;
   background-image: url("../img/post-background.png");
@@ -1731,5 +1739,53 @@ fieldset {
 
 /*modal*/
 .modal-connection {
-  display: none;
+  display: block;
+  background: var(--milk-white-bg);
+  border-radius: 6px;
+  width: 477px;
+  padding: 20px 25px 27px 23px;
+}
+
+.connection__heading {
+  color: var(--text-about-us);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.connection-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.connection-inp {
+  background: var(--basic-white);
+  border: 2px solid rgba(var(--input-email), 0.52);
+  border-radius: 4px;
+}
+
+.connection-inp.small-inp {
+  width: 267px;
+  height: 44px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.connection-inp::placeholder {
+  color: var(--placegolder-sub);
+  font-weight: normal;
+}
+.connection-inp.big-inp{
+  width: 428px;
+  height: 154px;
+}
+.connection-inp:hover {
+  border: 2px solid rgba(var(--input-email), 0.52);
+}
+
+.connection-inp:active,
+.connection-inp:focus {
+  border: 2px solid rgba(var(--inp-border-active), 0.52);
+  outline: none;
 }
