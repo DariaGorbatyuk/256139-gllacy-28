@@ -1157,7 +1157,7 @@ fieldset {
 .filter-sort-arrow {
   position: absolute;
   fill: var(--arrow-select);
-  top: 29px;
+  top: 37px;
   left: 171px;
 }
 
