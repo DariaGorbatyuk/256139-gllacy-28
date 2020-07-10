@@ -61,6 +61,7 @@
   --catalog-link-here: #D07058;
   --blue-post: lightblue;
   --close: #2C2829;
+  --cross: #231F20;
   --link-opacity: rgba(255, 188, 158, 0.8);
   --text-shadow: 160, 32, 11;
   --input-email: 178, 178, 178;
@@ -1743,7 +1744,8 @@ fieldset {
   background: var(--milk-white-bg);
   border-radius: 6px;
   width: 477px;
-  padding: 20px 25px 27px 23px;
+  padding: 15px 25px 27px 23px;
+  position: relative;
 }
 
 .connection__heading {
@@ -1751,17 +1753,46 @@ fieldset {
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
+  margin: 0;
+  margin-bottom: 20px
 }
 
 .connection-form {
   display: flex;
   flex-wrap: wrap;
 }
+.connection__close{
+  padding: 8px;
+  background-color: transparent;
+  position: absolute;
+  top: 15px;
+  right: 18px;
+  border: 0;
+  cursor: pointer;
+}
+.connection__close::before,
+.connection__close::after{
+  content: "";
+  width: 2px;
+  height: 20px;
+  background-color: var(--cross);
+  display: block;
+  position: absolute;
+  top: 0;
+  transform: rotate(45deg);
+}
+.connection__close::after{
+  transform: rotate(-45deg);
+}
+.connection-form div{
+  margin-bottom: 20px;
+}
 
 .connection-inp {
   background: var(--basic-white);
   border: 2px solid rgba(var(--input-email), 0.52);
   border-radius: 4px;
+  padding-left: 13px;
 }
 
 .connection-inp.small-inp {
@@ -1778,7 +1809,12 @@ fieldset {
 }
 .connection-inp.big-inp{
   width: 428px;
-  height: 154px;
+  min-height: 154px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--text-about-us);
+  padding-top: 10px;
 }
 .connection-inp:hover {
   border: 2px solid rgba(var(--input-email), 0.52);
@@ -1788,4 +1824,8 @@ fieldset {
 .connection-inp:focus {
   border: 2px solid rgba(var(--inp-border-active), 0.52);
   outline: none;
+}
+.connection-btn{
+  padding: 10px 25px;
+  margin-left: auto;
 }
