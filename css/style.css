@@ -1403,7 +1403,7 @@ fieldset {
 
 .filter-additive {
   width: 711px;
-  margin-top: 14px;
+  margin-top: 13px;
 }
 
 .filter-additive__list {
@@ -1413,11 +1413,17 @@ fieldset {
   flex-wrap: wrap;
   background: rgba(var(--white-opacity), 0.2);
   border-radius: 20px;
-  padding: 9px 19px 11px 48px;
+  padding: 9px 19px 9px 48px;
   align-items: center;
   justify-content: space-between;
 }
-
+.filter-additive__item{
+  padding-left: 34px;
+  margin-bottom: 4px;
+}
+.filter-additive__item:first-child{
+  padding-left: 0;
+}
 .filter-additive__label {
   position: relative;
 }
