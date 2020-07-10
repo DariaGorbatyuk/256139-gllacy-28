@@ -1205,7 +1205,9 @@ fieldset {
   width: 196px;
   position: relative;
 }
-
+.filter-sort__label{
+  position: relative;
+}
 .filter-sort__select {
   background-color: rgba(var(--white-opacity), 0.2);
   border-radius: 20px;
@@ -1220,7 +1222,7 @@ fieldset {
 .filter-sort-arrow {
   position: absolute;
   fill: var(--arrow-select);
-  top: 37px;
+  top: 6px;
   left: 171px;
 }
 
