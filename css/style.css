@@ -1739,12 +1739,24 @@ fieldset {
 }
 
 /*modal*/
+.modal-connection__layout{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 99;
+}
+
 .modal-connection {
   display: block;
   background: var(--milk-white-bg);
   border-radius: 6px;
   width: 477px;
   padding: 15px 25px 27px 23px;
+  margin: 0 auto;
+  margin-top: 35vh;
   position: relative;
 }
 
@@ -1783,6 +1795,9 @@ fieldset {
 }
 .connection__close::after{
   transform: rotate(-45deg);
+}
+.connection__close:focus{
+  outline: none;
 }
 .connection-form div{
   margin-bottom: 20px;

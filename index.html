@@ -232,7 +232,7 @@
       <p class="excerpt ">Новое в нашем блоге</p>
       <h2 class="blog-news__heading">
         <a class="blog-news__link" href="#">10&nbsp;способов сервировки фруктовых щербетов
-        к&nbsp;столу
+          к&nbsp;столу
           <svg class="blog-news__line" width="278" height="62" viewBox="0 0 278 62" xmlns="http://www.w3.org/2000/svg">
             <line x1="8.74228e-08" y1="61" x2="62" y2="61" stroke-width="2"/>
             <line x1="8.74228e-08" y1="31" x2="266" y2="31" stroke-width="2"/>
@@ -334,29 +334,34 @@
             d="M14.6957 0H14.5434L0 1.61282V29.8372L14.5434 39L29.0868 29.8372V1.61282L14.6957 0ZM27.1832 28.678L14.5434 36.6413L1.90359 28.678V17.1362L14.4863 25.0693V26.5107L5.85353 21.0675V22.4585L14.5244 27.9723V29.444L5.86305 23.9806V25.3717L14.5339 30.8855L23.2809 25.3414V19.3538L27.1832 16.8842V28.678ZM27.1832 15.4125L23.7092 17.5697L22.1102 18.5777L14.4958 13.7795V15.1706L21.0061 19.2732H20.9395L20.7967 19.3639L19.8449 19.9385L14.4768 16.5516V17.9426L18.7123 20.6139L17.7129 21.3195L14.5148 19.3034V20.6945L16.6183 22.0049L14.4768 23.3657L1.96069 15.4831L14.4958 7.49961L27.1832 15.4125ZM27.1832 14.0114L14.4768 6.04807L1.90359 14.0013V3.41716L14.5529 2.01602L27.1927 3.41716V14.0114H27.1832Z"/>
         </svg>
       </a>
-      <p>Сделано в&nbsp;<a class="link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy;&nbsp;2019</p>
+      <p>Сделано в&nbsp;<a class="link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy;&nbsp;2019
+      </p>
     </section>
   </div>
 </footer>
-
-<section class="modal-connection">
-  <h2 class="connection__heading">Мы обязательно вам ответим!</h2>
-  <button class="connection__close" type="button"></button>
-  <form class="connection-form" method="post" action="https://echo.htmlacademy.ru">
-    <div>
-      <label for="connection-login" class="visually-hidden">Имя и Фамилия</label>
-      <input class="connection-inp small-inp" id="connection-login" type="text" name="login" placeholder="Имя Фамилия">
-    </div>
-    <div>
-      <label for="connection-email" class="visually-hidden">Email</label>
-      <input class="connection-inp small-inp" id="connection-email" type="email" name="email" placeholder="email@example.com">
-    </div>
-    <div>
-      <label class="visually-hidden" for="connection-message">Сообщение</label>
-      <textarea class="connection-inp big-inp" id="connection-message" name="message" placeholder="В свободной форме"></textarea>
-    </div>
-    <button class="btn-link connection-btn" type="submit">Отправить</button>
-  </form>
-</section>
+<div class="modal-connection__layout">
+  <section class="modal-connection">
+    <h2 class="connection__heading">Мы обязательно вам ответим!</h2>
+    <button class="connection__close" type="button" aria-label="Закрыть"></button>
+    <form class="connection-form" method="post" action="https://echo.htmlacademy.ru">
+      <div>
+        <label for="connection-login" class="visually-hidden">Имя и Фамилия</label>
+        <input class="connection-inp small-inp" id="connection-login" type="text" name="login"
+               placeholder="Имя Фамилия">
+      </div>
+      <div>
+        <label for="connection-email" class="visually-hidden">Email</label>
+        <input class="connection-inp small-inp" id="connection-email" type="email" name="email"
+               placeholder="email@example.com">
+      </div>
+      <div>
+        <label class="visually-hidden" for="connection-message">Сообщение</label>
+        <textarea class="connection-inp big-inp" id="connection-message" name="message"
+                  placeholder="В свободной форме"></textarea>
+      </div>
+      <button class="btn-link connection-btn" type="submit">Отправить</button>
+    </form>
+  </section>
+</div>
 </body>
 </html>
