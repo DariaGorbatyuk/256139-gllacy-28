@@ -108,6 +108,18 @@ img {
   height: auto;
 }
 
+.wrapper-1 {
+  background-color: var(--green-bg);
+}
+
+.wrapper-2 {
+  background-color: var(--blue-bg);
+}
+
+.wrapper-3 {
+  background-color: var(--violet-bg);
+}
+
 .btn-link {
   font-weight: bold;
   font-size: 18px;
@@ -1598,9 +1610,19 @@ fieldset {
 }
 
 .map__img {
-  width: 100%;
+  width: 100vw;
   object-fit: cover;
   height: 430px;
+  min-width: 1200px;
+}
+
+.yandex-map {
+  position: absolute;
+  width: 100vw;
+  height: 430px;
+  border: 0;
+  z-index: 2;
+  min-width: 1200px;
 }
 
 .contacts-layout {
@@ -1610,12 +1632,14 @@ fieldset {
   top: 0;
   margin-left: -600px;
   left: 50%;
+  z-index: 3;
 }
 
 .pin-img {
   position: absolute;
   top: 159px;
   left: 23vw;
+  z-index: 1;
 }
 
 .index-footer .contacts {
