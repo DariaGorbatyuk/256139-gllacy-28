@@ -1633,6 +1633,7 @@ fieldset {
   margin-left: -600px;
   left: 50%;
   z-index: 3;
+  pointer-events: none;
 }
 
 .pin-img {
@@ -1654,6 +1655,7 @@ fieldset {
   line-height: 20px;
   border-radius: 16px;
   padding: 31px 25px 31px;
+  pointer-events: all;
 }
 
 .footer::before {
