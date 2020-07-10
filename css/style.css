@@ -1552,6 +1552,8 @@ fieldset {
 /*index-footer*/
 .map {
   position: relative;
+  height: 430px;
+  margin-bottom: 8px;
 }
 
 .map__img {
@@ -1568,7 +1570,11 @@ fieldset {
   margin-left: -600px;
   left: 50%;
 }
-
+.pin-img{
+  position: absolute;
+  top: 159px;
+  left: 23vw;
+}
 .index-footer .contacts {
   width: 303px;
   position: absolute;
@@ -1747,6 +1753,7 @@ fieldset {
   right: 0;
   background: rgba(0, 0, 0, 0.3);
   z-index: 99;
+  display: none;
 }
 
 .modal-connection {
