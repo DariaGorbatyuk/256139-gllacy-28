@@ -1361,10 +1361,16 @@ fieldset {
   flex-wrap: wrap;
   border-radius: 20px;
   background: rgba(var(--white-opacity), 0.2);
-  padding: 10px 14px 10px 47px;
+  padding: 11px 14px 3px 47px;
   justify-content: space-between;
 }
-
+.filter-fat-content__item{
+  margin-bottom: 3px;
+  padding-left: 34px;
+}
+.filter-fat-content__item:first-child{
+  padding-left: 0;
+}
 .fat-content__label {
   position: relative;
 }
