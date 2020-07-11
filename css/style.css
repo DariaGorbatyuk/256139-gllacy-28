@@ -1972,6 +1972,7 @@ fieldset {
   line-height: 20px;
   color: var(--text-about-us);
   padding-top: 10px;
+  resize: none;
 }
 
 .connection-inp:hover {
