@@ -1516,7 +1516,7 @@ fieldset {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 36px;
+  margin-bottom: 35px;
 }
 
 .product-item .bestsellers-section::before {
@@ -1526,6 +1526,7 @@ fieldset {
 .product-item {
   margin-bottom: 35px;
 }
+/*pages-list*/
 
 .pages-list__layout {
   display: flex;
@@ -1534,6 +1535,7 @@ fieldset {
   margin-left: auto;
   justify-content: flex-end;
   position: relative;
+  align-items: baseline;
 }
 
 .pages-list {
@@ -1547,12 +1549,17 @@ fieldset {
 
 .pages-list__btn {
   border: 0;
-  padding: 0;
   background-color: transparent;
   position: absolute;
   cursor: pointer;
+  top: 4px;
+  padding: 8px;
+  right: -3px;
 }
-
+.pages-list__btn.previous{
+  right: 184px;
+  top: 6px;
+}
 .pages-list__btn::before {
   content: "";
   display: block;
@@ -1561,13 +1568,14 @@ fieldset {
   background-repeat: no-repeat;
   width: 7px;
   height: 12px;
-  top: 6px;
-  right: 0px;
+  top: 2px;
+  right: 3px;
 }
 
 .pages-list__btn.previous::before {
   transform: rotate(180deg);
-  right: 187px;
+  top: 1px;
+  right: 4px;
 }
 
 .pages-list__btn:disabled::before {
