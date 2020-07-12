@@ -1432,9 +1432,11 @@ input[type="checkbox"] {
   padding-left: 34px;
   margin-right: 18px;
 }
-.filter-fat-content__item:nth-child(4n){
+
+.filter-fat-content__item:nth-child(4n) {
   margin-right: 0;
 }
+
 .fat-content__label {
   position: relative;
 }
@@ -1477,18 +1479,17 @@ input[type="checkbox"] {
   flex-wrap: wrap;
   background: rgba(var(--white-opacity), 0.2);
   border-radius: 20px;
-  padding: 9px 19px 9px 48px;
-  align-items: center;
-  justify-content: space-between;
+  padding: 9px 19px 3px 16px;
+  align-items: flex-start;
 }
 
 .filter-additive__item {
   padding-left: 34px;
-  margin-bottom: 4px;
+  margin-bottom: 9px;
+  margin-right: 20px;
 }
-
-.filter-additive__item:first-child {
-  padding-left: 0;
+.filter-additive__item:nth-child(5n){
+  margin-right: 0;
 }
 
 .filter-additive__label {
