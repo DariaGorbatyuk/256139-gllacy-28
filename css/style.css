@@ -177,6 +177,7 @@ img {
 .link:active {
   color: var(--link);
   text-decoration: underline solid var(--link-opacity);
+  outline: none;
 }
 
 .link-black {
@@ -963,14 +964,14 @@ input[type="checkbox"] {
   top: 0;
 }
 
-.bestsellers-section:focus,
+.bestsellers-section:focus-within,
 .bestsellers-section:hover {
   outline: none;
   z-index: 2;
 }
 
 .bestsellers-section:hover .bestsellers-hover,
-.bestsellers-section:focus .bestsellers-hover {
+.bestsellers-section:focus-within .bestsellers-hover {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
