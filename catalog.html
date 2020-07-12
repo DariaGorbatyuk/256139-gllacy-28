@@ -43,7 +43,8 @@
         </a>
         <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
           <label for="search-text" class="visually-hidden">Поиск</label>
-          <input class="search-form__inp main-inp" id="search-text" type="search" name="search-text" placeholder="Крем-брюле">
+          <input class="search-form__inp main-inp" id="search-text" type="search" name="search-text"
+                 placeholder="Крем-брюле">
         </form>
       </li>
       <li class="user-navigation__item sign-up">
@@ -151,7 +152,7 @@
         </label>
       </fieldset>
       <fieldset class="filter-price filter-fieldset">
-          <legend class="filter-price__legend">Цена:</legend>
+        <legend class="filter-price__legend">Цена:</legend>
         <div class="filter-price__layout-price">
           <label class="filter-price__label">
             <span class="visually-hidden">От</span>
@@ -367,29 +368,35 @@
         </article>
       </li>
     </ul>
-    <div class="pages-list__layout">
-      <a class="pages-list__btn previous"><span class="visually-hidden">На предыдущую страницу</span>
-      </a>
-      <ul class="pages-list">
-        <li class="page-item">
-          <a href="#" class="page-link active">1</a>
-        </li>
-        <li class="page-item">
-          <a href="#" class="page-link">2</a>
-        </li>
-        <li class="page-item">
-          <a href="#" class="page-link">3</a>
-        </li>
-        <li class="page-item">
-          <a href="#" class="page-link">4</a>
-        </li>
-        <li class="page-item">
-          <a href="#" class="page-link">5</a>
-        </li>
-      </ul>
-      <a class="pages-list__btn next" href="#"><span class="visually-hidden">На следующую страницу</span>
-      </a>
-    </div>
+
+
+    <ul class="pages-list">
+      <li class="page-item">
+        <a class="pages-list__btn previous">
+          <span class="visually-hidden">На предыдущую страницу</span>
+        </a>
+      </li>
+      <li class="page-item">
+        <a href="#" class="page-link active">1</a>
+      </li>
+      <li class="page-item">
+        <a href="#" class="page-link">2</a>
+      </li>
+      <li class="page-item">
+        <a href="#" class="page-link">3</a>
+      </li>
+      <li class="page-item">
+        <a href="#" class="page-link">4</a>
+      </li>
+      <li class="page-item">
+        <a href="#" class="page-link">5</a>
+      </li>
+      <li class="page-item">
+        <a class="pages-list__btn next" href="#">
+          <span class="visually-hidden">На следующую страницу</span>
+        </a>
+      </li>
+    </ul>
   </section>
 </main>
 <footer class="footer container">

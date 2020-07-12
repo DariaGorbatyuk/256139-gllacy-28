@@ -1578,16 +1578,6 @@ input[type="checkbox"] {
 
 /*pages-list*/
 
-.pages-list__layout {
-  display: flex;
-  flex-wrap: wrap;
-  width: 171px;
-  margin-left: auto;
-  justify-content: flex-end;
-  position: relative;
-  align-items: baseline;
-}
-
 .pages-list {
   margin: 0;
   padding: 0;
@@ -1595,20 +1585,21 @@ input[type="checkbox"] {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  justify-content: flex-end;
 }
 
 .pages-list__btn {
   border: 0;
-  position: absolute;
   cursor: pointer;
-  top: 4px;
-  padding: 8px;
-  right: -3px;
+  background-color: transparent;
+  margin-right: -8px;
+  padding-right: 25px;
+  padding-bottom: 4px;
+  position: relative;
 }
 
 .pages-list__btn.previous {
-  right: 184px;
-  top: 6px;
+  margin-right: 0;
 }
 
 .pages-list__btn:not([href]) {
@@ -1624,14 +1615,13 @@ input[type="checkbox"] {
   background-repeat: no-repeat;
   width: 7px;
   height: 12px;
-  top: 2px;
-  right: 3px;
+  top: 6px;
+  right: 4px;
 }
 
 .pages-list__btn.previous::before {
   transform: rotate(180deg);
-  top: 1px;
-  right: 4px;
+  right: 12px;
 }
 
 .pages-list__btn:not([href])::before {
