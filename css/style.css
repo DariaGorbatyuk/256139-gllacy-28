@@ -1657,10 +1657,11 @@ fieldset {
 }
 
 .map__img {
-  width: 100vw;
+  margin: 0 auto;
   object-fit: cover;
   height: 430px;
-  min-width: 1200px;
+  width: 1200px;
+  display: block;
 }
 
 .yandex-map {
@@ -1681,13 +1682,6 @@ fieldset {
   left: 50%;
   z-index: 3;
   pointer-events: none;
-}
-
-.pin-img {
-  position: absolute;
-  top: 159px;
-  left: 23vw;
-  z-index: 1;
 }
 
 .contacts {
