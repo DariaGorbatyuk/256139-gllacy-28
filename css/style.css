@@ -921,9 +921,13 @@ position: absolute;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
-
+.bestsellers-item{
+  margin-right: 26px;
+}
+.bestsellers-item:nth-child(4n){
+  margin-right: 0;
+}
 .bestsellers-section {
   width: 267px;
   position: relative;
@@ -1548,7 +1552,6 @@ fieldset {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin-bottom: 35px;
 }
 
@@ -1558,9 +1561,12 @@ fieldset {
 
 .product-item {
   margin-bottom: 35px;
+  margin-right: 26px;
 }
-
-/*pages-list*/
+.product-item:nth-child(4n){
+  margin-right: 0;
+}
+  /*pages-list*/
 
 .pages-list__layout {
   display: flex;
