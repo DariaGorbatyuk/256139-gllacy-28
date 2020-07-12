@@ -1279,13 +1279,12 @@ fieldset {
 .filter-price {
   width: 218px;
   position: relative;
+  display: block;
 }
-
-.filter-price__layout-price {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 100%;
+.filter-price__layout-price{
+  position: absolute;
+  top: 0;
+  right: 51px;
 }
 
 .filter-price__inp {
@@ -1313,11 +1312,11 @@ fieldset {
   height: 12px;
   background-image: url("../img/ruble-small.svg");
   top: 1px;
-  left: 84px;
+  left: 30px;
 }
 
 .filter-price__label:last-child::after {
-  left: 137px;
+  left: 84px;
 }
 
 .filter-price__inp::placeholder {
