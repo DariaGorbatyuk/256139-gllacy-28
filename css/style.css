@@ -1423,19 +1423,18 @@ input[type="checkbox"] {
   flex-wrap: wrap;
   border-radius: 20px;
   background: rgba(var(--white-opacity), 0.2);
-  padding: 11px 14px 3px 47px;
-  justify-content: space-between;
+  padding: 11px 14px 0 13px;
+  align-items: flex-start;
 }
 
 .filter-fat-content__item {
-  margin-bottom: 3px;
+  margin-bottom: 9px;
   padding-left: 34px;
+  margin-right: 18px;
 }
-
-.filter-fat-content__item:first-child {
-  padding-left: 0;
+.filter-fat-content__item:nth-child(4n){
+  margin-right: 0;
 }
-
 .fat-content__label {
   position: relative;
 }
