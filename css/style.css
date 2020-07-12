@@ -1538,6 +1538,7 @@ fieldset {
   background-color: var(--basic-white);
   color: var(--text-about-us);
   box-shadow: inset 0px 2px 1px var(--menu-shadow-active);
+  border: 0;
 }
 
 /*product-list catalog*/
