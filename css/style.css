@@ -126,6 +126,15 @@ img {
   background-color: var(--violet-bg);
   background-image: url("../img/strawberry-sorbet-3.png");
 }
+.back-light{
+  width: 1200px;
+  height: 656px;
+  position: absolute;
+  z-index: -1;
+  background: linear-gradient(180deg, rgba(var(--white-opacity), 0.2) 0%, rgba(var(--white-opacity), 0) 100%);
+  left: 50%;
+  margin-left: -600px;
+}
 
 .btn-link {
   font-weight: bold;
