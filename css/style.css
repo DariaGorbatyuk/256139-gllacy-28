@@ -1212,7 +1212,6 @@ position: absolute;
 
 .sub-email::placeholder {
   font-weight: normal;
-  line-height: 24px;
   opacity: 1;
   color: var(--placegolder-sub);
 
