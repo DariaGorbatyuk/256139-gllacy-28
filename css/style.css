@@ -149,14 +149,14 @@ img {
 
 .link {
   color: var(--basic-white);
-  text-decoration: underline  solid rgba(var(--white-opacity), 0.2);
+  text-decoration: underline solid rgba(var(--white-opacity), 0.2);
 }
 
 .link:hover,
 .link:focus,
 .link:active {
   color: var(--link);
-  text-decoration: underline  solid var(--link-opacity);
+  text-decoration: underline solid var(--link-opacity);
 }
 
 .link-black {
@@ -1525,6 +1525,7 @@ fieldset {
 .product-item {
   margin-bottom: 35px;
 }
+
 /*pages-list*/
 
 .pages-list__layout {
@@ -1554,14 +1555,17 @@ fieldset {
   padding: 8px;
   right: -3px;
 }
-.pages-list__btn.previous{
+
+.pages-list__btn.previous {
   right: 184px;
   top: 6px;
 }
-.pages-list__btn:not([href]){
+
+.pages-list__btn:not([href]) {
   cursor: default;
   pointer-events: none;
 }
+
 .pages-list__btn::before {
   content: "";
   display: block;
@@ -1652,7 +1656,7 @@ fieldset {
   z-index: 1;
 }
 
-.index-footer .contacts {
+.contacts {
   width: 303px;
   position: absolute;
   top: 61px;
@@ -1665,15 +1669,6 @@ fieldset {
   border-radius: 16px;
   padding: 31px 25px 31px;
   pointer-events: all;
-}
-
-.footer::before {
-  content: "";
-  position: absolute;
-  width: 1146px;
-  height: 1px;
-  background-color: rgba(var(--white-opacity), 0.2);
-  top: -11px;
 }
 
 .contacts > p {
@@ -1723,6 +1718,15 @@ fieldset {
   column-gap: 26px;
   padding-top: 10px;
   padding-bottom: 25px;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  width: 1146px;
+  height: 1px;
+  background-color: rgba(var(--white-opacity), 0.2);
+  top: -11px;
 }
 
 .socials {
