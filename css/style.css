@@ -47,6 +47,7 @@
   --black: #000000;
   --arrow-select: #ECF1EE;
   --basket-line: #CACAC7;
+  --blog-news-line: #353535;
 
   --btn-liner-grad1: #F26843;
   --btn-liner-grad2: #E74A35;
@@ -253,6 +254,7 @@ input[type="checkbox"] {
   display: flex;
   flex-wrap: wrap;
   margin-top: 14px;
+  max-width: 675px;
 }
 
 .menu-site__item {
@@ -401,7 +403,7 @@ input[type="checkbox"] {
   flex-wrap: wrap;
   margin-left: auto;
   margin-top: 14px;
-
+  max-width: 267px;
 }
 
 .user-navigation span {
@@ -1087,21 +1089,22 @@ input[type="checkbox"] {
   background-repeat: no-repeat;
   top: -9px;
   left: -54px;
-}
-
-.info-item:first-child::before {
   background-image: url("../img/ice-cream.svg");
 }
 
-.info-item:nth-child(2)::before {
+.info-item.ice::before {
+  background-image: url("../img/ice-cream.svg");
+}
+
+.info-item.cow::before {
   background-image: url("../img/cow.svg");
 }
 
-.info-item:nth-child(3)::before {
+.info-item.leaf::before {
   background-image: url("../img/leaf.svg");
 }
 
-.info-item:last-child::before {
+.info-item.thermometer::before {
   background-image: url("../img/thermometer.svg");
 }
 
@@ -1151,7 +1154,7 @@ input[type="checkbox"] {
 }
 
 .blog-news__line {
-  stroke: #353535;
+  stroke: var(--blog-news-line);
   position: absolute;
   top: 27px;
   left: 1px;
@@ -1259,7 +1262,7 @@ input[type="checkbox"] {
   margin-right: 3px;
 }
 
-.filter-fieldset{
+.filter-fieldset {
   padding: 0;
   border: 0;
   margin: 0;
@@ -1923,7 +1926,7 @@ input[type="checkbox"] {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(var(--black-opacity), 0.3);
   z-index: 99;
   display: none;
 }
