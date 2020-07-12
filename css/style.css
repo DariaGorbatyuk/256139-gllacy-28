@@ -1666,7 +1666,7 @@ fieldset {
 
 .yandex-map {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   height: 430px;
   border: 0;
   z-index: 2;
