@@ -1776,6 +1776,8 @@ fieldset {
   width: 36px;
   height: 36px;
   opacity: 0.8;
+  border: 2px solid rgba(var(--white-opacity), 0.5);
+  border-radius: 50%;
 }
 
 .socials-link.fb::before {
@@ -1799,7 +1801,9 @@ fieldset {
 .socials-link:active::before {
   opacity: 1;
 }
-
+.socials-link:active::before{
+  border: 2px solid rgba(var(--white-opacity), 0.7);
+}
 .useful-list {
   width: 330px;
   margin: 0;
