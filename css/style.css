@@ -1548,7 +1548,6 @@ fieldset {
 
 .pages-list__btn {
   border: 0;
-  background-color: transparent;
   position: absolute;
   cursor: pointer;
   top: 4px;
@@ -1558,6 +1557,10 @@ fieldset {
 .pages-list__btn.previous{
   right: 184px;
   top: 6px;
+}
+.pages-list__btn:not([href]){
+  cursor: default;
+  pointer-events: none;
 }
 .pages-list__btn::before {
   content: "";
@@ -1577,9 +1580,8 @@ fieldset {
   right: 4px;
 }
 
-.pages-list__btn:disabled::before {
+.pages-list__btn:not([href])::before {
   opacity: 0.2;
-  cursor: default;
 }
 
 .page-item {
