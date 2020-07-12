@@ -386,6 +386,7 @@ input[type="checkbox"] {
 
 .catalog-link.active {
   background-color: var(--catalog-link-here);
+  color: var(--basic-white);
 }
 
 /*user-navigation*/
@@ -1258,7 +1259,7 @@ input[type="checkbox"] {
   margin-right: 3px;
 }
 
-fieldset {
+.filter-fieldset{
   padding: 0;
   border: 0;
   margin: 0;
