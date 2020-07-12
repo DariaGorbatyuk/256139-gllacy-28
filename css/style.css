@@ -606,7 +606,6 @@ input[type="checkbox"] {
 .basket-section .goods-list {
   padding: 0;
   list-style: none;
-  margin-right: 21px;
 }
 
 .goods-list::after {
@@ -623,13 +622,12 @@ input[type="checkbox"] {
 .goods-item {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   font-weight: normal;
   font-size: 13px;
   line-height: 16px;
   color: var(--text-about-us);
-  margin-bottom: 25px;
-  justify-content: space-between;
+  margin-bottom: 19px;
+  align-items: center;
 }
 
 .goods-item:last-child {
@@ -640,8 +638,9 @@ input[type="checkbox"] {
   background-color: transparent;
   border: 0;
   padding: 0;
-  position: relative;
   cursor: pointer;
+  margin-right: 22px;
+  margin-left: -2px;
 }
 
 .basket__delete-item::after,
@@ -650,7 +649,7 @@ input[type="checkbox"] {
   position: absolute;
   display: block;
   background-color: var(--close);
-  width: 11px;
+  width: 15px;
   height: 1px;
 }
 
@@ -664,17 +663,23 @@ input[type="checkbox"] {
 
 .basket-img {
   border-radius: 50%;
+  margin-right: 13px;
 }
 
 .basket__description-item {
   max-width: 216px;
   margin: 0;
+  margin-right: 31px;
+  padding-top: 2px;
 }
-
+.goods-item:nth-child(2) .basket__description-item{
+  padding-top: 8px;
+}
 .basket__weight {
   color: var(--black);
   max-width: 95px;
   margin: 0;
+  margin-right: 27px;
 }
 
 .basket__weight span {
