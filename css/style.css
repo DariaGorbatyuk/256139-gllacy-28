@@ -33,9 +33,9 @@
   --menu-active: #EDEDED;
   --menu-shadow-active: #696969;
 
-  --green-bg: #9EB8A9;
-  --blue-bg: #B7C2CF;
-  --violet-bg: #B2A19A;
+  --green-bg: #849D8F;
+  --blue-bg: #8996A6;
+  --violet-bg: #9D8B84;
   --waffle: #EEE4CB;
   --milk-white-bg: #F8F7F4;
   --search-border: #D3D3D2;
@@ -108,17 +108,23 @@ img {
   max-width: 100%;
   height: auto;
 }
-
+.site-wrapper{
+  background-position: top center;
+  background-repeat: no-repeat;
+}
 .wrapper-1 {
   background-color: var(--green-bg);
+  background-image: url("../img/raspberry-jam-1.png");
 }
 
 .wrapper-2 {
   background-color: var(--blue-bg);
+  background-image: url("../img/chocolate-and-lemon-2.png");
 }
 
 .wrapper-3 {
   background-color: var(--violet-bg);
+  background-image: url("../img/strawberry-sorbet-3.png");
 }
 
 .btn-link {
@@ -780,7 +786,7 @@ input[type="checkbox"] {
 }
 
 .slider__img {
-  position: absolute;
+position: absolute;
   margin: auto;
   left: 0;
   right: 0;
@@ -1959,7 +1965,7 @@ fieldset {
 
 .connection-inp {
   background: var(--basic-white);
-  border: 2px solid rgba(var(--input-email), 0.52);
+  border: 1px solid rgba(var(--input-email), 0.52);
   border-radius: 4px;
   padding-left: 13px;
 }
