@@ -289,7 +289,14 @@ input[type="checkbox"] {
   padding-bottom: 5px;
   z-index: 1;
 }
-
+.catalog-list::before{
+  content: "";
+  position: absolute;
+  width: 95px;
+  height: 8px;
+  background-color: transparent;
+  top: -6px;
+}
 .catalog-list a {
   color: var(--text-about-us);
 }
