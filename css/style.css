@@ -246,6 +246,10 @@ input[type="checkbox"] {
   margin-bottom: 15px;
 }
 
+.header.index {
+  margin-bottom: 0;
+}
+
 .navigation {
   display: flex;
   flex-wrap: wrap;
@@ -791,6 +795,10 @@ input[type="checkbox"] {
   position: absolute;
   right: 27px;
   z-index: -1;
+}
+
+.work-time__layout.index {
+  position: static;
 }
 
 /*breadcrumbs-list*/
@@ -1557,7 +1565,8 @@ input[type="checkbox"] {
   margin-bottom: 9px;
   margin-right: 20px;
 }
-.filter-additive__item:nth-child(5n){
+
+.filter-additive__item:nth-child(5n) {
   margin-right: 0;
 }
 
