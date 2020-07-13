@@ -198,6 +198,7 @@ body:not(.index-page)::before {
 
 .main-inp {
   box-shadow:  0 0 0 1px rgba(var(--input-email), 0.52);
+  padding: 0 14px;
 }
 
 .main-inp:hover {
@@ -481,8 +482,7 @@ input[type="checkbox"] {
   height: 44px;
   background: var(--basic-white);
   border: 0;
-  border-radius: 4px;
-  padding-left: 14px;
+  border-radius: 4px;;
   font-weight: normal;
   color: var(--text-about-us);
 }
@@ -550,7 +550,6 @@ input[type="checkbox"] {
   background: var(--basic-white);
   border: 0;
   border-radius: 4px;
-  padding-left: 14px;
   font-weight: bold;
   font-size: 16px;
   color: var(--text-about-us);
@@ -1228,13 +1227,11 @@ input[type="checkbox"] {
 }
 
 .sub-email {
-  padding: 0;
   width: 368px;
   height: 44px;
   background: var(--basic-white);
   border: 0;
   border-radius: 6px;
-  padding-left: 14px;
   margin-right: 8px;
   font-weight: bold;
   font-size: 16px;
@@ -2089,7 +2086,6 @@ input[type="checkbox"] {
   background: var(--basic-white);
   border: 0;
   border-radius: 4px;
-  padding-left: 13px;
 }
 
 .connection-inp.small-inp {
@@ -2123,6 +2119,7 @@ input[type="checkbox"] {
   line-height: 20px;
   color: var(--text-about-us);
   padding-top: 10px;
+  padding-bottom: 10px;
   resize: none;
 }
 
