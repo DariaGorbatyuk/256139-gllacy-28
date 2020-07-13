@@ -243,6 +243,7 @@ input[type="checkbox"] {
 .header {
   padding-top: 9px;
   z-index: 2;
+  margin-bottom: 15px;
 }
 
 .navigation {
@@ -764,6 +765,7 @@ input[type="checkbox"] {
   text-align: right;
   display: block;
   border-bottom: transparent;
+  text-decoration: none;
 }
 
 .navigation__tel:hover,
@@ -786,6 +788,9 @@ input[type="checkbox"] {
   margin-left: auto;
   width: 167px;
   align-items: flex-end;
+  position: absolute;
+  right: 27px;
+  z-index: -1;
 }
 
 /*breadcrumbs-list*/
@@ -795,7 +800,6 @@ input[type="checkbox"] {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  margin-top: -28px;
   max-width: 267px;
 }
 
