@@ -377,7 +377,7 @@ input[type="checkbox"] {
 .catalog-item.new::after {
   content: "";
   width: 128px;
-  height: 2px;
+  height: 1px;
   display: block;
   position: absolute;
   background-color: rgba(var(--new-catalog), 0.2);
