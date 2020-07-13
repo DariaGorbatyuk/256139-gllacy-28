@@ -1320,8 +1320,8 @@ input[type="checkbox"] {
   padding: 9px 35px 9px 16px;
   color: var(--basic-white);
   -moz-appearance: none;
-  appearance: none;
   -webkit-appearance: none;
+  appearance: none;
   font-weight: 500;
 }
 
