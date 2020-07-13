@@ -1197,28 +1197,17 @@ input[type="checkbox"] {
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
-  position: relative;
-}
-
-.blog-news__line {
-  stroke: var(--blog-news-line);
-  position: absolute;
-  top: 27px;
-  left: 1px;
-
+  text-decoration: underline solid var(--blog-news-line);
+  text-decoration-skip-ink: none;
 }
 
 .blog-news__link:hover,
 .blog-news__link:focus,
 .blog-news__link:active {
   color: var(--link-red);
+  text-decoration: underline solid var(--link-red-bottom);
 }
 
-.blog-news__link:hover .blog-news__line,
-.blog-news__link:focus .blog-news__line,
-.blog-news__link:active .blog-news__line {
-  stroke: var(--link-red-bottom);
-}
 
 .subscription {
   width: 560px;
