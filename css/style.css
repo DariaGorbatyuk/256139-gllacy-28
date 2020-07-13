@@ -238,7 +238,7 @@ input[type="checkbox"] {
 /*header*/
 .header {
   padding-top: 9px;
-  z-index: 2;
+  z-index:10;
   margin-bottom: 15px;
 }
 
@@ -399,10 +399,6 @@ input[type="checkbox"] {
   margin-left: auto;
   margin-top: 14px;
   max-width: 267px;
-}
-
-.user-navigation span {
-  max-width: 100%;
 }
 
 .user-navigation__item {
@@ -622,6 +618,15 @@ input[type="checkbox"] {
   color: var(--text-about-us);
   padding: 20px 14px 21px 21px;
 }
+.basket-section::after{
+  content: "";
+  width: 510px;
+  height: 1px;
+  background-color: var(--basket-line);
+  position: absolute;
+  bottom: 112px;
+  right: 14px;
+}
 
 .user-navigation__item.full .user-navigation__link {
   background-color: var(--basic-white);
@@ -636,17 +641,7 @@ input[type="checkbox"] {
 .basket-section .goods-list {
   padding: 0;
   list-style: none;
-}
-
-.goods-list::after {
-  content: "";
-  display: block;
-  width: 510px;
-  height: 1px;
-  background-color: var(--basket-line);
-  position: absolute;
-  top: 129px;
-  right: 15px;
+  margin-bottom: 31px;
 }
 
 .goods-item {
@@ -657,7 +652,7 @@ input[type="checkbox"] {
   line-height: 16px;
   color: var(--text-about-us);
   margin-bottom: 19px;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .goods-item:last-child {
@@ -667,10 +662,12 @@ input[type="checkbox"] {
 .basket__delete-item {
   background-color: transparent;
   border: 0;
-  padding: 0;
+  padding: 8px;
   cursor: pointer;
-  margin-right: 22px;
-  margin-left: -2px;
+  margin-right: 8px;
+  margin-left: -4px;
+  margin-top: 8px;
+  position: relative;
 }
 
 .basket__delete-item::after,
@@ -681,6 +678,7 @@ input[type="checkbox"] {
   background-color: var(--close);
   width: 15px;
   height: 1px;
+  left: 2px;
 }
 
 .basket__delete-item::before {
@@ -700,18 +698,16 @@ input[type="checkbox"] {
   max-width: 216px;
   margin: 0;
   margin-right: 31px;
-  padding-top: 2px;
+  padding-top: 10px;
 }
 
-.goods-item:nth-child(2) .basket__description-item {
-  padding-top: 8px;
-}
 
 .basket__weight {
   color: var(--black);
   max-width: 95px;
   margin: 0;
   margin-right: 27px;
+  padding-top: 10px;
 }
 
 .basket__weight span {
@@ -720,6 +716,7 @@ input[type="checkbox"] {
 
 .basket__price {
   max-width: 50px;
+  padding-top: 10px;
 }
 
 .basket__altogether-price {
@@ -727,7 +724,6 @@ input[type="checkbox"] {
   font-weight: bold;
   font-size: 15px;
   line-height: 16px;
-  margin-top: 34px;
   text-align: right;
   margin-bottom: 15px;
 }
