@@ -130,7 +130,8 @@ img {
   background-color: var(--violet-bg);
   background-image: url("../img/strawberry-sorbet-3.png");
 }
-body:not(.index-page)::before{
+
+body:not(.index-page)::before {
   content: " ";
   position: absolute;
   z-index: -10;
@@ -138,6 +139,7 @@ body:not(.index-page)::before{
   height: 656px;
   background: linear-gradient(180deg, rgba(var(--white-opacity), 0.2) 0%, rgba(var(--white-opacity), 0) 100%);
 }
+
 .btn-link {
   font-weight: bold;
   font-size: 18px;
@@ -194,21 +196,17 @@ body:not(.index-page)::before{
   text-decoration: underline solid var(--link-red-bottom);
 }
 
+.main-inp {
+  box-shadow:  0 0 0 1px rgba(var(--input-email), 0.52);
+}
+
 .main-inp:hover {
-  border: 1px solid rgba(var(--input-email), 0.52);
-  box-shadow: inset 0 2px rgba(var(--input-email), 0.52),
-  inset 0 -2px rgba(var(--input-email), 0.52),
-  inset 2px 0 rgba(var(--input-email), 0.52),
-  inset -2px 0 rgba(var(--input-email), 0.52);
+  box-shadow:  0 0 0 2px rgba(var(--input-email), 0.52);
 }
 
 .main-inp:focus,
 .main-inp:active {
-  border: 1px solid rgba(var(--inp-border-active), 0.52);
-  box-shadow: inset 0 2px rgba(var(--inp-border-active), 0.52),
-  inset 0 -2px rgba(var(--inp-border-active), 0.52),
-  inset 2px 0 rgba(var(--inp-border-active), 0.52),
-  inset -2px 0 rgba(var(--inp-border-active), 0.52);
+  box-shadow:  0 0 0 2px rgba(var(--inp-border-active), 0.52);
   outline: none;
 }
 
@@ -497,7 +495,7 @@ input[type="checkbox"] {
   width: 311px;
   height: 44px;
   background: var(--basic-white);
-  border: 1px solid var(--search-border);
+  border: 0;
   border-radius: 4px;
   padding-left: 14px;
   font-weight: normal;
@@ -565,7 +563,7 @@ input[type="checkbox"] {
   width: 241px;
   height: 44px;
   background: var(--basic-white);
-  border: 1px solid var(--search-border);
+  border: 0;
   border-radius: 4px;
   padding-left: 14px;
   font-weight: bold;
@@ -1253,12 +1251,12 @@ input[type="checkbox"] {
   flex-wrap: wrap;
 }
 
-.sub-form .sub-email {
+.sub-email {
   padding: 0;
   width: 368px;
   height: 44px;
   background: var(--basic-white);
-  border: 1px solid rgba(var(--input-email), 0.52);
+  border: 0;
   border-radius: 6px;
   padding-left: 14px;
   margin-right: 8px;
@@ -2113,7 +2111,7 @@ input[type="checkbox"] {
 
 .connection-inp {
   background: var(--basic-white);
-  border: 1px solid rgba(var(--input-email), 0.52);
+  border: 0;
   border-radius: 4px;
   padding-left: 13px;
 }
