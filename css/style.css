@@ -1206,6 +1206,7 @@ input[type="checkbox"] {
 .blog-news__link:active {
   color: var(--link-red);
   text-decoration: underline solid var(--link-red-bottom);
+  outline: none;
 }
 
 
