@@ -892,7 +892,7 @@ input[type="checkbox"] {
 
 /*promo*/
 .promo {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .promo-list {
@@ -903,7 +903,9 @@ input[type="checkbox"] {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
+.promo-item{
+  margin-bottom: 10px;
+}
 .promo-section {
   background-size: cover;
   background-position: center;
