@@ -1458,11 +1458,11 @@ input[type="checkbox"] {
 }
 
 .range-controls .bar {
-  width: 103px;
+  width: 56%;
   height: 2px;
   background-color: var(--milk-white-bg);
   position: absolute;
-  left: 20px;
+  left: 12%;
   top: -1px;
 }
 
@@ -1475,11 +1475,11 @@ input[type="checkbox"] {
   border-radius: 50%;
   border: 8px solid var(--basic-white);
   top: 7px;
-  left: 33px;
+  left: 15%;
 }
 
 .range-controls .toggle-max {
-  left: 136px;
+  left: 60%;
 }
 
 .range-controls .toggle:hover,
@@ -1487,6 +1487,7 @@ input[type="checkbox"] {
 .range-controls .toggle:active {
   transform: scale(1.2);
   cursor: pointer;
+  outline: none;
 }
 
 .filter-fat-content {
